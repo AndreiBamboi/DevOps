@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: elk
+spec:
+  destination:
+    namespace: kube-logging
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: logging
+    repoURL: 'https://github.com/AndreiBamboi/kubernetes.git'
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
