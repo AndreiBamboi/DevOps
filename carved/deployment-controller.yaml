@@ -18,7 +18,7 @@ spec:
           value: impressive-spaniel-redis-master
         - name: REDIS_PASSWORD
           value: fQJIviDfk7
-        image: docker.io/doomhammer/pluralsight:run-controller
+        image: bambix/carved:controller
         imagePullPolicy: Always
         name: run-controller
       imagePullSecrets:

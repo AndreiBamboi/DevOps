@@ -17,7 +17,7 @@ spec:
       - env:
         - name: RUN_CONTROLLER_URL
           value: http://run-controller:8080
-        image: docker.io/doomhammer/pluralsight:workout-gateway
+        image: bambix/carved:gateway
         imagePullPolicy: Always
         name: workout-gateway
       imagePullSecrets:
