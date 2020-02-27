@@ -19,5 +19,6 @@ spec:
           value: http://localhost:8000
         image: bambix/carved:front
         imagePullPolicy: Always
+        name: front-end
       imagePullSecrets:
       - name: regcred
