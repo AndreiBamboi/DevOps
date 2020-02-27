@@ -34,6 +34,7 @@ spec:
           - --cert-dir=/tmp
           - --secure-port=4443
           - --kubelet-insecure-tls
+          - --insecure-kubelet
           - --kubelet-preferred-address-types=InternalIP
         ports:
         - name: main-port
