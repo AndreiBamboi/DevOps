@@ -11,4 +11,4 @@ spec:
     targetPort: 8000
   selector:
     app: workout-gateway
-  type: ClusterIP
+  type: NodePort
