@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: run-controller
+  name: run-controller
 spec:
   selector:
     matchLabels:

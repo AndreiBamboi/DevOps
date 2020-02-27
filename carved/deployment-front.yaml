@@ -1,5 +1,9 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
+metadata:
+  labels:
+    app: front-end
+  name: front-end
 spec:
   selector:
     matchLabels:
