@@ -1,0 +1,116 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+spec:
+  selector:
+    matchLabels:
+      app: front-end
+  template:
+    metadata:
+      labels:
+        app: front-end
+    spec:
+      containers:
+        - env:
+            - name: REACT_APP_BACKEND_URL
+              value: http://localhost:8000
+          image: bambix/carved:front
+          imagePullPolicy: Always
+      imagePullSecrets:
+        - name: regcred
+---
+apiVersion: v1
+kind: Service
+spec:
+  ports:
+    - port: 3000
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    app: front-end
+  sessionAffinity: None
+  type: ClusterIP
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: run-controller
+spec:
+  selector:
+    matchLabels:
+      app: run-controller
+  template:
+    metadata:
+      labels:
+        app: run-controller
+    spec:
+      containers:
+        - env:
+            - name: REDIS_HOST
+              value: impressive-spaniel-redis-master
+            - name: REDIS_PASSWORD
+              value: fQJIviDfk7
+          image: bambix/carved:controller
+          imagePullPolicy: Always
+          name: run-controller
+#      imagePullSecrets:
+#        - name: regcred
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: run-controller
+  name: run-controller
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: run-controller
+  type: ClusterIP
+---
+
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: workout-gateway
+  name: workout-gateway
+spec:
+  selector:
+    matchLabels:
+      app: workout-gateway
+  template:
+    metadata:
+      labels:
+        app: workout-gateway
+    spec:
+      containers:
+        - env:
+            - name: RUN_CONTROLLER_URL
+              value: http://run-controller:8080
+          image: bambix/carved:gateway
+          imagePullPolicy: Always
+          name: workout-gateway
+#      imagePullSecrets:
+#        - name: regcred
+      restartPolicy: Always
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: workout-gateway
+  name: workout-gateway
+spec:
+  ports:
+    - port: 8000
+      protocol: TCP
+      targetPort: 8000
+  selector:
+    app: workout-gateway
+  type: ClusterIP
