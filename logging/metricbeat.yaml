@@ -119,6 +119,13 @@ spec:
             "-e",
             "-system.hostfs=/hostfs",
           ]
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
           env:
             - name: ELASTICSEARCH_HOST
               value: es-cluster-0.elasticsearch
@@ -261,6 +268,13 @@ spec:
             "-c", "/etc/metricbeat.yml",
             "-e",
           ]
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
           env:
             - name: ELASTICSEARCH_HOST
               value: es-cluster-0.elasticsearch
