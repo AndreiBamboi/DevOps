@@ -1,0 +1,14 @@
+project: default
+source:
+  repoURL: 'https://github.com/AndreiBamboi/kubernetes.git'
+  path: logging
+  targetRevision: HEAD
+  directory:
+    recurse: true
+    jsonnet: {}
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: kube-monitoring
+syncPolicy:
+  automated:
+    selfHeal: true
