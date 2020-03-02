@@ -4,10 +4,10 @@ metadata:
   name: metrics-server
 spec:
   destination:
-    namespace: default
+    namespace: kube-monitoring
     server: 'https://kubernetes.default.svc'
   source:
-    path: metrics-server
+    path: metrics-server/deploy/kubernetes
     repoURL: 'https://github.com/AndreiBamboi/kubernetes.git'
     targetRevision: HEAD
   project: default
