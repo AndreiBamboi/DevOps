@@ -13,4 +13,20 @@ kind: Job
 metadata:
   generateName: schema-migrate-
   annotations:
-    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    argocd.argoproj.io/hook: PostSync
+  spec:
+    template:
+      spec:
+        containers:
+          - name: slack-notification
+            image: appropriate/curl
+            command:
+              - "curl"
+              - "-X"
+              - "POST"
+              - "--data-urlencode"
+              - "payload={\"channel\": \"#somechannel\", \"username\": \"hello\", \"text\": \"App Sync succeeded\", \"icon_emoji\": \":ghost:\"}"
+              - "https://hooks.slack.com/services/..."
+        restartPolicy: Never
+    backoffLimit: 2
