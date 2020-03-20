@@ -11,17 +11,17 @@ metadata:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: schema-migrate-
+  generateName: app-test-
   annotations:
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
     argocd.argoproj.io/hook: PostSync
-  spec:
-    template:
-      spec:
-        containers:
-          - name: pi
-            image: perl
-            command: ["perl"]
-            args: ["-Mbignum=bpi", "-wle", "print bpi(2000)"]
-        restartPolicy: Never
-      backoffLimit: 2
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      containers:
+        - name: test-pi
+          image: perl
+          command: ["perl"]
+          args: ["-Mbignum=bpi", "-wle", "print bpi(2000)"]
+      restartPolicy: Never
+  backoffLimit: 2
