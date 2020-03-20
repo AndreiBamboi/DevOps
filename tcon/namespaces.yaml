@@ -12,6 +12,11 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: app3
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app4
 
 ---
 apiVersion: batch/v1
@@ -25,9 +30,9 @@ spec:
   template:
     spec:
       containers:
-        - name: test-pi
-          image: perl
-          command: ["perl"]
-          args: ["-Mbignum=bpi", "-wle", "print bpi(2000)"]
+        - name: hook-test-script
+          image: centos
+          command:
+            - echo "This is a hook script test"
       restartPolicy: Never
   backoffLimit: 2
