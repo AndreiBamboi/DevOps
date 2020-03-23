@@ -29,6 +29,7 @@ metadata:
 spec:
   template:
     spec:
+      serviceAccountName: internal-kubectl
       containers:
         - name: hook-test-script
           image: mtr.external.otc.telekomcloud.com/abamboi/alpine:k8s_1.14.6
@@ -50,3 +51,34 @@ metadata:
 data:
   .dockerconfigjson: ewogICJhdXRocyI6IHsKICAgICJtdHIuZXh0ZXJuYWwub3RjLnRlbGVrb21jbG91ZC5jb20iOiB7CiAgICAgICJhdXRoIjogIllXSmhiV0p2YVN0aVlXMWlhWGc2VjFWQ1JWZExRa1E0T1U1RE9FWlpVMDVHTjFwS05FTkxSVWRUTlUwME5USk9TRU5hVFZaYVRVZFRWVTFJUzFOT01WWXdXVXN3VDBORk5sRktWVWcwUXc9PSIsCiAgICAgICJlbWFpbCI6ICIiCiAgICB9CiAgfQp9
 type: kubernetes.io/dockerconfigjson
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: internal-kubectl
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: create-secrets-for-ns
+rules:
+  - apiGroups: [""]
+    resources:
+      - namespaces
+      - secrets
+    verbs:
+      - get
+      - list
+      - delete
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: create-secret-for-ns
+subjects:
+  - kind: ServiceAccount
+    name: internal-kubectl
+roleRef:
+  kind: Role
+  name: create-secrets-for-ns
+  apiGroup: rbac.authorization.k8s.io
