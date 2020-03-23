@@ -35,10 +35,10 @@ spec:
         - name: hook-test-script
           image: mtr.external.otc.telekomcloud.com/abamboi/alpine:k8s_1.14.6
           command:
-            - "kubectl"
+            - "/bin/bash"
           args:
-            - "get"
-            - "ns"
+            - "-c"
+            - "/apps/mtr-pull-secret-sync.sh"
           volumeMounts:
             - name: mtr-script
               mountPath: /apps
