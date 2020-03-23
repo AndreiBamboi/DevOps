@@ -1,0 +1,31 @@
+[1mdiff --git a/.idea/kubernetes.iml b/.idea/kubernetes.iml[m
+[1mindex ff0e175..ed96e86 100644[m
+[1m--- a/.idea/kubernetes.iml[m
+[1m+++ b/.idea/kubernetes.iml[m
+[36m@@ -1,7 +1,14 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ <module type="JAVA_MODULE" version="4">[m
+[32m+[m[32m  <component name="FacetManager">[m
+[32m+[m[32m    <facet type="Python" name="Python">[m
+[32m+[m[32m      <configuration sdkName="" />[m
+[32m+[m[32m    </facet>[m
+[32m+[m[32m  </component>[m
+   <component name="NewModuleRootManager">[m
+[31m-    <content url="file://$MODULE_DIR$" />[m
+[32m+[m[32m    <content url="file://$MODULE_DIR$">[m
+[32m+[m[32m      <excludeFolder url="file://$MODULE_DIR$/venv" />[m
+[32m+[m[32m    </content>[m
+     <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />[m
+     <orderEntry type="sourceFolder" forTests="false" />[m
+   </component>[m
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mindex d1e22ec..4d8ae47 100644[m
+[1m--- a/.idea/misc.xml[m
+[1m+++ b/.idea/misc.xml[m
+[36m@@ -1,4 +1,4 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ <project version="4">[m
+[31m-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />[m
+[32m+[m[32m  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="Python 3.8 (kubernetes)" project-jdk-type="Python SDK" />[m
+ </project>[m
+\ No newline at end of file[m
