@@ -114,6 +114,7 @@ roleRef:
   kind: ClusterRole
   name: mtr-create-secret
   apiGroup: rbac.authorization.k8s.io
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
