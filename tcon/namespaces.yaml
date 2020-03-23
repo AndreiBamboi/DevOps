@@ -22,7 +22,7 @@ metadata:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: app-test-
+  generateName: mtr-pull-secret-sync-
   annotations:
     argocd.argoproj.io/hook: PostSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
@@ -100,9 +100,9 @@ rules:
       - create
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding
+kind: RoleBinding
 metadata:
-  name: mtr-create-secret
+  name: mtr-create-secret-cluster
 subjects:
   - kind: ServiceAccount
     name: mtr-create-secret
