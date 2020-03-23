@@ -39,8 +39,16 @@ spec:
           args:
             - "get"
             - "ns"
+          volumeMounts:
+            - name: mtr-script
+              mountPath: /apps
       imagePullSecrets:
         - name: mtr-pull-secret
+      volumes:
+        - name: mtr-script
+          configMap:
+            name: mtr-pull-secret-sync
+            defaultMode: 0744
       restartPolicy: Never
   backoffLimit: 2
 ---
