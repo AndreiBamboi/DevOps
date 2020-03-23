@@ -33,6 +33,8 @@ spec:
         - name: hook-test-script
           image: centos
           command:
-            - /bin/sh -c 'echo "This is a hook script test"'
+          - "/bin/echo"
+          arg:
+          - "This is a hook script test"
       restartPolicy: Never
   backoffLimit: 2
