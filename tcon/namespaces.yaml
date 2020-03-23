@@ -35,7 +35,7 @@ spec:
           command:
           - "kubectl get ns"
       imagePullSecrets:
-        - mtr-pull-secret
+        - name: mtr-pull-secret
       restartPolicy: Never
   backoffLimit: 2
 ---
