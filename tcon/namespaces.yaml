@@ -31,11 +31,11 @@ spec:
     spec:
       containers:
         - name: hook-test-script
-          image: centos
+          image: mtr.external.otc.telekomcloud.com/abamboi/alpine:k8s_1.14.6
           command:
-          - "/bin/echo"
-          args:
-          - "This is a hook script test"
+          - "kubectl get ns"
+      imagePullSecrets:
+        - mtr-pull-secret
       restartPolicy: Never
   backoffLimit: 2
 ---
