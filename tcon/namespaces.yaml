@@ -34,7 +34,7 @@ spec:
           image: centos
           command:
           - "/bin/echo"
-          arg:
+          args:
           - "This is a hook script test"
       restartPolicy: Never
   backoffLimit: 2
