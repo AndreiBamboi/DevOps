@@ -29,7 +29,7 @@ metadata:
 spec:
   template:
     spec:
-      serviceAccountName: internal-kubectl
+      serviceAccountName: argocd-server
       containers:
         - name: hook-test-script
           image: mtr.external.otc.telekomcloud.com/abamboi/alpine:k8s_1.14.6
