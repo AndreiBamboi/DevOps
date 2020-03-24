@@ -42,11 +42,9 @@ spec:
             - "/apps/script/mtr-pull-secret-sync.sh"
           volumeMounts:
             - name: mtr-pull-secret-sync-script
-              mountPath: /apps
-              subPath: script
+              mountPath: /apps/script
             - name: mtr-pull-secret-def
-              mountPath: /apps
-              subPath: yaml
+              mountPath: /apps/yaml
       imagePullSecrets:
         - name: mtr-pull-secret
       volumes:
