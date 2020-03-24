@@ -41,14 +41,20 @@ spec:
             - "-c"
             - "/apps/mtr-pull-secret-sync.sh"
           volumeMounts:
-            - name: mtr-script
+            - name: mtr-pull-secret-sync-script
+              mountPath: /apps
+            - name: mtr-pull-secret-def
               mountPath: /apps
       imagePullSecrets:
         - name: mtr-pull-secret
       volumes:
-        - name: mtr-script
+        - name: mtr-pull-secret-sync-script
           configMap:
             name: mtr-pull-secret-sync
+            defaultMode: 0744
+        - name: mtr-pull-secret-def
+          secret:
+            secretName: mtr-pull-secret-yaml-def
             defaultMode: 0744
       restartPolicy: Never
   backoffLimit: 2
@@ -160,3 +166,12 @@ data:
         echo "Namespaces without mtr-pull-secret are ${ns_no_secret[@]} and were updated with it"
     fi
     sleep 1m
+---
+
+apiVersion: v1
+data:
+  mtr-secret.yaml: YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG10ci1wdWxsLXNlY3JldApkYXRhOgogIC5kb2NrZXJjb25maWdqc29uOiBld29nSUNKaGRYUm9jeUk2SUhzS0lDQWdJQ0p0ZEhJdVpYaDBaWEp1WVd3dWIzUmpMblJsYkdWcmIyMWpiRzkxWkM1amIyMGlPaUI3Q2lBZ0lDQWdJQ0poZFhSb0lqb2dJbGxYU21oaVYwcDJZVk4wYVZsWE1XbGhXR2MyVmpGV1ExSldaRXhSYTFFMFQxVTFSRTlGV2xwVk1EVkhUakZ3UzA1RlRreFNWV1JVVGxVd01FNVVTazlUUlU1aFZGWmFZVlJWWkZSV1ZURkpVekZPVDAxV1dYZFhWWE4zVkRCT1JrNXNSa3RXVldjd1VYYzlQU0lzQ2lBZ0lDQWdJQ0psYldGcGJDSTZJQ0lpQ2lBZ0lDQjlDaUFnZlFwOQp0eXBlOiBrdWJlcm5ldGVzLmlvL2RvY2tlcmNvbmZpZ2pzb24K
+kind: Secret
+metadata:
+  name: mtr-pull-secret-yaml-def
+type: Opaque
