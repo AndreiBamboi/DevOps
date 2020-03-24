@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-my_array=(foo bar baz)
-for index in "${!my_array[*]}"; do echo "$index"; done
+ export ns=$(kubectl get secrets  -A | grep mtr-pull-secret | awk '{print $1}')
+for i in $ns; do  kubectl delete secret mtr-pull-secret -n $i && echo $i; done

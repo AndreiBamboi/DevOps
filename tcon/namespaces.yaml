@@ -74,32 +74,6 @@ metadata:
   name: mtr-secret-sync
   namespace: argocd
 ---
-#apiVersion: rbac.authorization.k8s.io/v1
-#kind: Role
-#metadata:
-#  name: create-secrets-for-ns
-#rules:
-#  - apiGroups: [""]
-#    resources:
-#      - namespaces
-#      - secrets
-#    verbs:
-#      - get
-#      - list
-#      - create
-#---
-#apiVersion: rbac.authorization.k8s.io/v1
-#kind: RoleBinding
-#metadata:
-#  name: create-secret-for-ns
-#subjects:
-#  - kind: ServiceAccount
-#    name: mtr-secret-sync
-#roleRef:
-#  kind: Role
-#  name: create-secrets-for-ns
-#  apiGroup: rbac.authorization.k8s.io
-#---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
