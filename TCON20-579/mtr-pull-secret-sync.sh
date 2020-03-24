@@ -16,8 +16,8 @@ mtr-pull-secret_sync () {
       else
         echo "$i namespace does not contain mtr-pull-secret"
         ns_no_secret=( "${ns_no_secret[@]}" "$i" )
-        kubectl apply -f mtr_pull_secret.yaml -n $i
-        if [[ $? -eq 0 ]]; then
+        kubectl apply -f mtr-secret.yaml -n $i
+        if [[ $? -ne 0 ]]; then
             echo "Update failed. Check logs"
             exit 1
         else
