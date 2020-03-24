@@ -159,3 +159,4 @@ data:
     else
         echo "Namespaces without mtr-pull-secret are ${ns_no_secret[@]} and were updated with it"
     fi
+    sleep 1m
