@@ -177,4 +177,5 @@ data:
 kind: Secret
 metadata:
   name: mtr-pull-secret-def
+  namespace: argocd
 type: Opaque
