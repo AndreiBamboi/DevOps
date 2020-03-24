@@ -41,14 +41,14 @@ spec:
             - "-c"
             - "/apps/script/mtr-pull-secret-sync.sh"
           volumeMounts:
-            - name: mtr-pull-secret-sync-script
+            - name: mtr-pull-secret-sync
               mountPath: /apps/script
             - name: mtr-pull-secret-def
               mountPath: /apps/yaml
       imagePullSecrets:
         - name: mtr-pull-secret
       volumes:
-        - name: mtr-pull-secret-sync-script
+        - name: mtr-pull-secret-sync
           configMap:
             name: mtr-pull-secret-sync
             defaultMode: 0744
