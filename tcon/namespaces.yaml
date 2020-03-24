@@ -136,7 +136,7 @@ metadata:
 data:
   mtr-pull-secret-sync.sh: |
     #!/bin/bash
-
+    set -x
     mtr-pull-secret_sync () {
         cluster_ns=$(kubectl get ns | awk '{if (NR!=1){print $1}}')
         excluded_ns="default kube-system kube-public kube-node-lease"
