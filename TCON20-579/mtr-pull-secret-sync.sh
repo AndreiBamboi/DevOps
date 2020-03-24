@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-
+set -e
 mtr-pull-secret_sync () {
     cluster_ns=$(kubectl get ns | awk '{if (NR!=1){print $1}}')
     excluded_ns="default kube-system kube-public kube-node-lease"
@@ -22,12 +22,10 @@ mtr-pull-secret_sync () {
       fi
     done
         echo
-    if [[ $? -eq 0 ]]; then
-        if [[ -z "$ns_no_secret" ]]; then
-            echo "All namespaces scanned contain mtr-pull-secret"
-        else
-            echo "Namespaces without mtr-pull-secret are ${ns_no_secret[@]} and were updated with it"
-        fi
+    if [[ -z "$ns_no_secret" ]]; then
+        echo "All namespaces scanned contain mtr-pull-secret"
+    else
+        echo "Namespaces without mtr-pull-secret are ${ns_no_secret[@]} and were updated with it"
     fi
 }
 mtr-pull-secret_sync
