@@ -1,0 +1,17 @@
+I0307 06:50:37.681525       1 node.go:135] Successfully retrieved node IP: 172.18.16.37
+I0307 06:50:37.681591       1 server_others.go:176] Using ipvs Proxier.
+I0307 06:50:37.682303       1 server.go:529] Version: v1.16.3
+I0307 06:50:37.692864       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072
+I0307 06:50:37.692924       1 conntrack.go:52] Setting nf_conntrack_max to 131072
+I0307 06:50:37.693024       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400
+I0307 06:50:37.693087       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600
+I0307 06:50:37.693248       1 config.go:131] Starting endpoints config controller
+I0307 06:50:37.693327       1 shared_informer.go:197] Waiting for caches to sync for endpoints config
+I0307 06:50:37.693361       1 config.go:313] Starting service config controller
+I0307 06:50:37.693376       1 shared_informer.go:197] Waiting for caches to sync for service config
+I0307 06:50:37.793481       1 shared_informer.go:204] Caches are synced for endpoints config 
+I0307 06:50:37.793519       1 shared_informer.go:204] Caches are synced for service config 
+I0317 08:47:40.194630       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.66.234:53
+I0317 08:47:40.194714       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.65.209:53
+I0317 12:53:40.243027       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.1:443/TCP/172.18.16.199:6443
+W0318 16:20:26.157688       1 reflector.go:299] k8s.io/client-go/informers/factory.go:134: watch of *v1.Service ended with: too old resource version: 105948472 (106196221)

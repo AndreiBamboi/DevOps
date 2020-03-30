@@ -1,0 +1,11 @@
+.:53
+2020-03-17T08:43:42.802Z [INFO] plugin/reload: Running configuration MD5 = b9d55fc86b311e1d1a0507440727efd2
+2020-03-17T08:43:42.802Z [INFO] CoreDNS-1.6.0
+2020-03-17T08:43:42.802Z [INFO] linux/amd64, go1.12.7, 0a218d3
+CoreDNS-1.6.0
+linux/amd64, go1.12.7, 0a218d3
+E0317 12:51:21.548193       1 reflector.go:283] pkg/mod/k8s.io/client-go@v0.0.0-20190620085101-78d2af792bab/tools/cache/reflector.go:98: Failed to watch *v1.Namespace: Get https://10.233.0.1:443/api/v1/namespaces?resourceVersion=100700340&timeout=7m3s&timeoutSeconds=423&watch=true: dial tcp 10.233.0.1:443: connect: connection refused
+E0317 12:51:21.548201       1 reflector.go:283] pkg/mod/k8s.io/client-go@v0.0.0-20190620085101-78d2af792bab/tools/cache/reflector.go:98: Failed to watch *v1.Endpoints: Get https://10.233.0.1:443/api/v1/endpoints?resourceVersion=105439179&timeout=5m24s&timeoutSeconds=324&watch=true: dial tcp 10.233.0.1:443: connect: connection refused
+E0318 16:20:26.124816       1 reflector.go:283] pkg/mod/k8s.io/client-go@v0.0.0-20190620085101-78d2af792bab/tools/cache/reflector.go:98: Failed to watch *v1.Service: Get https://10.233.0.1:443/api/v1/services?resourceVersion=105948472&timeout=8m48s&timeoutSeconds=528&watch=true: dial tcp 10.233.0.1:443: connect: connection refused
+W0318 16:21:38.813807       1 reflector.go:302] pkg/mod/k8s.io/client-go@v0.0.0-20190620085101-78d2af792bab/tools/cache/reflector.go:98: watch of *v1.Service ended with: too old resource version: 105948472 (106196221)
+W0318 16:21:38.833316       1 reflector.go:302] pkg/mod/k8s.io/client-go@v0.0.0-20190620085101-78d2af792bab/tools/cache/reflector.go:98: watch of *v1.Namespace ended with: too old resource version: 100700340 (106196221)

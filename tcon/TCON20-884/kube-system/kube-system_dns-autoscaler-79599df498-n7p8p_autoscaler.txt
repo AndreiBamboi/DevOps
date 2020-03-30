@@ -1,0 +1,7 @@
+I0306 06:18:45.466491       1 autoscaler.go:49] Scaling Namespace: kube-system, Target: deployment/coredns
+I0306 06:18:45.721106       1 plugin.go:50] Set control mode to linear
+I0306 06:18:45.721126       1 linear_controller.go:59] ConfigMap version change (old:  new: 2260) - rebuilding params
+I0306 06:18:45.721130       1 linear_controller.go:60] Params from apiserver: 
+{"coresPerReplica":256,"min":2,"nodesPerReplica":16,"preventSinglePointFailure":true}
+E0318 16:21:38.770490       1 streamwatcher.go:109] Unable to decode an event from the watch stream: http2: server sent GOAWAY and closed the connection; LastStreamID=429993, ErrCode=NO_ERROR, debug=""
+E0318 16:27:06.287678       1 streamwatcher.go:109] Unable to decode an event from the watch stream: http2: server sent GOAWAY and closed the connection; LastStreamID=133, ErrCode=NO_ERROR, debug=""

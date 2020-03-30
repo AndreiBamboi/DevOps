@@ -1,0 +1,136 @@
+2020-03-27T10:07:39.819857Z	info	FLAG: --binaryPath="/usr/local/bin/envoy"
+2020-03-27T10:07:39.819883Z	info	FLAG: --concurrency="2"
+2020-03-27T10:07:39.819888Z	info	FLAG: --configPath="/etc/istio/proxy"
+2020-03-27T10:07:39.819893Z	info	FLAG: --connectTimeout="10s"
+2020-03-27T10:07:39.819896Z	info	FLAG: --controlPlaneAuthPolicy="MUTUAL_TLS"
+2020-03-27T10:07:39.819900Z	info	FLAG: --controlPlaneBootstrap="true"
+2020-03-27T10:07:39.819902Z	info	FLAG: --customConfigFile=""
+2020-03-27T10:07:39.819911Z	info	FLAG: --datadogAgentAddress=""
+2020-03-27T10:07:39.819913Z	info	FLAG: --disableInternalTelemetry="false"
+2020-03-27T10:07:39.819917Z	info	FLAG: --discoveryAddress="istio-pilot.istio-system:15011"
+2020-03-27T10:07:39.819920Z	info	FLAG: --dnsRefreshRate="300s"
+2020-03-27T10:07:39.819923Z	info	FLAG: --domain="couch-experience.svc.cluster.local"
+2020-03-27T10:07:39.819926Z	info	FLAG: --drainDuration="45s"
+2020-03-27T10:07:39.819929Z	info	FLAG: --envoyAccessLogService=""
+2020-03-27T10:07:39.819932Z	info	FLAG: --envoyMetricsService=""
+2020-03-27T10:07:39.819935Z	info	FLAG: --help="false"
+2020-03-27T10:07:39.819938Z	info	FLAG: --id=""
+2020-03-27T10:07:39.819940Z	info	FLAG: --ip=""
+2020-03-27T10:07:39.819943Z	info	FLAG: --lightstepAccessToken=""
+2020-03-27T10:07:39.819946Z	info	FLAG: --lightstepAddress=""
+2020-03-27T10:07:39.819949Z	info	FLAG: --lightstepCacertPath=""
+2020-03-27T10:07:39.819951Z	info	FLAG: --lightstepSecure="false"
+2020-03-27T10:07:39.819955Z	info	FLAG: --log_as_json="false"
+2020-03-27T10:07:39.819957Z	info	FLAG: --log_caller=""
+2020-03-27T10:07:39.819961Z	info	FLAG: --log_output_level="default:info"
+2020-03-27T10:07:39.819964Z	info	FLAG: --log_rotate=""
+2020-03-27T10:07:39.819967Z	info	FLAG: --log_rotate_max_age="30"
+2020-03-27T10:07:39.820014Z	info	FLAG: --log_rotate_max_backups="1000"
+2020-03-27T10:07:39.820176Z	info	FLAG: --log_rotate_max_size="104857600"
+2020-03-27T10:07:39.820181Z	info	FLAG: --log_stacktrace_level="default:none"
+2020-03-27T10:07:39.820188Z	info	FLAG: --log_target="[stdout]"
+2020-03-27T10:07:39.820191Z	info	FLAG: --mixerIdentity=""
+2020-03-27T10:07:39.820208Z	info	FLAG: --outlierLogPath=""
+2020-03-27T10:07:39.820212Z	info	FLAG: --parentShutdownDuration="1m0s"
+2020-03-27T10:07:39.820214Z	info	FLAG: --pilotIdentity=""
+2020-03-27T10:07:39.820218Z	info	FLAG: --proxyAdminPort="15000"
+2020-03-27T10:07:39.820221Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2020-03-27T10:07:39.820224Z	info	FLAG: --proxyLogLevel="warning"
+2020-03-27T10:07:39.820228Z	info	FLAG: --serviceCluster="legacy-rawdata-to-netvis.couch-experience"
+2020-03-27T10:07:39.820231Z	info	FLAG: --serviceregistry="Kubernetes"
+2020-03-27T10:07:39.820233Z	info	FLAG: --statsdUdpAddress=""
+2020-03-27T10:07:39.820236Z	info	FLAG: --statusPort="15020"
+2020-03-27T10:07:39.820239Z	info	FLAG: --stsPort="0"
+2020-03-27T10:07:39.820242Z	info	FLAG: --templateFile=""
+2020-03-27T10:07:39.820245Z	info	FLAG: --tokenManagerPlugin="GoogleTokenExchange"
+2020-03-27T10:07:39.820248Z	info	FLAG: --trust-domain=""
+2020-03-27T10:07:39.820254Z	info	FLAG: --zipkinAddress="zipkin.istio-system:9411"
+2020-03-27T10:07:39.820290Z	info	Version 1.5.0-c3c353285578eb68b334fc8766746b754b6b3789-Clean
+2020-03-27T10:07:39.822314Z	info	Obtained private IP [10.233.77.8 fe80::c8fa:c0ff:fee2:4141]
+2020-03-27T10:07:39.822382Z	info	Proxy role: &model.Proxy{ClusterID:"", Type:"sidecar", IPAddresses:[]string{"10.233.77.8", "10.233.77.8", "fe80::c8fa:c0ff:fee2:4141"}, ID:"legacy-rawdata-to-netvis-548f95757f-fsbvs.couch-experience", Locality:(*envoy_api_v2_core.Locality)(nil), DNSDomain:"couch-experience.svc.cluster.local", ConfigNamespace:"", Metadata:(*model.NodeMetadata)(nil), SidecarScope:(*model.SidecarScope)(nil), MergedGateway:(*model.MergedGateway)(nil), ServiceInstances:[]*model.ServiceInstance(nil), WorkloadLabels:labels.Collection(nil), IstioVersion:(*model.IstioVersion)(nil)}
+2020-03-27T10:07:39.822393Z	info	PilotSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-pilot-service-account"}
+2020-03-27T10:07:39.822398Z	info	MixerSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-mixer-service-account"}
+2020-03-27T10:07:39.822854Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+concurrency: 2
+configPath: /etc/istio/proxy
+connectTimeout: 10s
+controlPlaneAuthPolicy: MUTUAL_TLS
+discoveryAddress: istio-pilot.istio-system:15011
+drainDuration: 45s
+envoyAccessLogService: {}
+envoyMetricsService: {}
+parentShutdownDuration: 60s
+proxyAdminPort: 15000
+serviceCluster: legacy-rawdata-to-netvis.couch-experience
+statNameLength: 189
+tracing:
+  zipkin:
+    address: zipkin.istio-system:9411
+
+2020-03-27T10:07:39.822866Z	info	JWT policy is third-party-jwt
+2020-03-27T10:07:39.822942Z	warn	Missing JWT token, can't use in process SDS ./var/run/secrets/tokens/istio-tokenstat ./var/run/secrets/tokens/istio-token: no such file or directory
+2020-03-27T10:07:39.822956Z	info	Monitored certs: []string{"/etc/certs/key.pem", "/etc/certs/root-cert.pem", "/etc/certs/cert-chain.pem"}
+2020-03-27T10:07:39.822962Z	info	waiting 2m0s for /etc/certs/key.pem
+2020-03-27T10:07:39.822978Z	info	waiting 2m0s for /etc/certs/root-cert.pem
+2020-03-27T10:07:39.822990Z	info	waiting 2m0s for /etc/certs/cert-chain.pem
+2020-03-27T10:07:39.823016Z	info	PilotSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-pilot-service-account"}
+2020-03-27T10:07:39.823032Z	info	Starting proxy agent
+2020-03-27T10:07:39.823092Z	info	Opening status port 15020
+
+2020-03-27T10:07:39.823209Z	info	Received new config, creating new Envoy epoch 0
+2020-03-27T10:07:39.823281Z	info	watching /etc/certs for changes
+2020-03-27T10:07:39.823301Z	info	Epoch 0 starting
+2020-03-27T10:07:39.835104Z	warn	failed to read pod labels: open ./etc/istio/pod/labels: no such file or directory
+2020-03-27T10:07:39.835557Z	info	Envoy command: [-c /etc/istio/proxy/envoy-rev0.json --restart-epoch 0 --drain-time-s 45 --parent-shutdown-time-s 60 --service-cluster legacy-rawdata-to-netvis.couch-experience --service-node sidecar~10.233.77.8~legacy-rawdata-to-netvis-548f95757f-fsbvs.couch-experience~couch-experience.svc.cluster.local --max-obj-name-len 189 --local-address-ip-version v4 --log-format [Envoy (Epoch 0)] [%Y-%m-%d %T.%e][%t][%l][%n] %v -l warning --component-log-level misc:error --concurrency 2]
+[Envoy (Epoch 0)] [2020-03-27 10:07:39.883][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 14, no healthy upstream
+[Envoy (Epoch 0)] [2020-03-27 10:07:39.883][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:54] Unable to establish new stream
+2020-03-27T10:07:42.680817Z	info	Envoy proxy is NOT ready: Get http://127.0.0.1:15000/stats?usedonly&filter=^(cluster_manager.cds|listener_manager.lds).(update_success|update_rejected)$: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+2020-03-27T10:07:43.685458Z	info	Envoy proxy is ready
+[2020-03-27T10:11:23.059Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 466 466 "-" "python-requests/2.22.0" "9db50aa3-9c07-97ad-9a09-14cff6f3d83e" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:58688 - default
+[2020-03-27T10:11:23.536Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 61 60 "-" "python-requests/2.22.0" "6ad725dd-f025-948a-88d7-ee739d800ce9" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:43406 - default
+[2020-03-27T10:11:26.653Z] "POST /transmission HTTP/1.1" 500 - "-" "-" 99 230 46 46 "-" "python-requests/2.22.0" "5456e0dd-c4c1-920f-ac15-bf8fa22a47fa" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:58760 - default
+[2020-03-27T10:11:26.704Z] "POST /devices HTTP/1.1" 200 - "-" "-" 608 1871 73 72 "-" "python-requests/2.22.0" "2141f21d-9071-9de3-bfb0-fcca61670762" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:43474 - default
+[Envoy (Epoch 0)] [2020-03-27 10:29:56.407][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[2020-03-27T10:31:33.054Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 187 187 "-" "python-requests/2.22.0" "0394ddba-9477-95b5-a2fc-0f8e48345c34" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:49584 - default
+[2020-03-27T10:31:33.248Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 70 69 "-" "python-requests/2.22.0" "91fb2c48-e986-90c7-bf5d-95ad708671d8" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:34298 - default
+[2020-03-27T10:31:36.369Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 969 969 "-" "python-requests/2.22.0" "92b854b9-5526-990e-b69a-3e9c2bda4e60" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:49638 - default
+[2020-03-27T10:31:37.343Z] "POST /devices HTTP/1.1" 200 - "-" "-" 106 418 70 70 "-" "python-requests/2.22.0" "3306b901-98f9-91be-a3d4-6cde0a6a8403" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:34368 - default
+[2020-03-27T10:31:40.457Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 949 948 "-" "python-requests/2.22.0" "cfa16a62-3d9c-9851-a700-19fac573467a" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:49712 - default
+[2020-03-27T10:31:41.412Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 74 73 "-" "python-requests/2.22.0" "738d57a2-b89c-9991-9577-e77138ca814e" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:40004 10.233.53.94:8080 10.233.77.8:34432 - default
+[Envoy (Epoch 0)] [2020-03-27 10:37:05.551][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 10:40:16.701][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 10:46:37.942][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[2020-03-27T10:51:33.057Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 659 659 "-" "python-requests/2.22.0" "76a49dea-1ef6-99ee-9b30-b89eb8ab14a1" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:55796 10.233.19.221:8080 10.233.77.8:40004 - default
+[2020-03-27T10:51:33.722Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 75 75 "-" "python-requests/2.22.0" "c322c7c1-6cd4-9d9a-bc80-cbb7acc6c118" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:52958 - default
+[2020-03-27T10:51:36.847Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 953 952 "-" "python-requests/2.22.0" "de051056-aaea-9e6f-87b4-dc25d6288d5d" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:40074 - default
+[2020-03-27T10:51:37.805Z] "POST /devices HTTP/1.1" 200 - "-" "-" 106 418 72 71 "-" "python-requests/2.22.0" "7ba63bb2-23ff-987f-9f10-fa80b183c8a2" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:53032 - default
+[2020-03-27T10:51:40.925Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 911 911 "-" "python-requests/2.22.0" "2564fda9-f758-965b-9287-a34b0203b83b" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:40148 - default
+[2020-03-27T10:51:41.842Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 71 70 "-" "python-requests/2.22.0" "4e409fe2-b4be-996a-933b-43cf13e5be77" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:53100 - default
+[2020-03-27T11:11:43.049Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 131 131 "-" "python-requests/2.22.0" "381210b2-f0d2-9ef1-a175-464ff62ef61a" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:55796 10.233.19.221:8080 10.233.77.8:58496 - default
+[2020-03-27T11:11:43.186Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 174 174 "-" "python-requests/2.22.0" "bad5b21a-7f81-9dd3-bef9-282773bea2c0" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:43210 - default
+[Envoy (Epoch 0)] [2020-03-27 11:13:15.474][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[2020-03-27T11:31:43.051Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 422 422 "-" "python-requests/2.22.0" "dea5203c-15c0-9cf2-b489-ce699d593a27" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:49186 - default
+[2020-03-27T11:31:43.479Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 58 57 "-" "python-requests/2.22.0" "274d0a3d-1ec1-9c74-a897-feb3530c109a" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:33900 - default
+[2020-03-27T11:31:46.589Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 45 44 "-" "python-requests/2.22.0" "b227aa02-7c3f-9f5a-9b54-35c5aa8127da" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:49240 - default
+[2020-03-27T11:31:46.638Z] "POST /devices HTTP/1.1" 200 - "-" "-" 106 418 59 58 "-" "python-requests/2.22.0" "cd7301e7-5d72-9892-9ed9-e5cf5c4a50ec" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:33954 - default
+[2020-03-27T11:31:49.747Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 813 813 "-" "python-requests/2.22.0" "e6f7b67e-27e0-9b86-9e55-50f3fee24424" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:49288 - default
+[2020-03-27T11:31:50.566Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 59 59 "-" "python-requests/2.22.0" "f811cfa3-2672-9582-b17b-ae7a1d0c47b5" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:34020 - default
+[Envoy (Epoch 0)] [2020-03-27 11:41:16.201][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 11:42:25.731][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[2020-03-27T11:51:53.051Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 104 104 "-" "python-requests/2.22.0" "a28bb1ad-88e0-904c-aca0-454cff44a027" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:41434 - default
+[2020-03-27T11:51:53.161Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 57 57 "-" "python-requests/2.22.0" "253016a3-7e96-94ee-8204-c17095a6492a" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:54380 - default
+[2020-03-27T11:51:56.273Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 1605 1605 "-" "python-requests/2.22.0" "d894bc04-4ee0-92cc-b672-dabfd264b21e" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:41492 - default
+[2020-03-27T11:51:57.885Z] "POST /devices HTTP/1.1" 200 - "-" "-" 110 393 57 56 "-" "python-requests/2.22.0" "00a9f4d0-4243-90c8-a70a-cea0b6030450" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:54464 - default
+[2020-03-27T11:52:00.987Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 61 60 "-" "python-requests/2.22.0" "5ccb0fea-834d-931b-9864-f792121fb762" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:55796 10.233.19.221:8080 10.233.77.8:41584 - default
+[2020-03-27T11:52:01.054Z] "POST /devices HTTP/1.1" 200 - "-" "-" 106 418 60 60 "-" "python-requests/2.22.0" "b8873ad2-0290-9a52-bb29-65b5d9cc51b7" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:60100 10.233.53.94:8080 10.233.77.8:54528 - default
+[Envoy (Epoch 0)] [2020-03-27 12:08:00.849][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[2020-03-27T12:11:53.051Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 171 171 "-" "python-requests/2.22.0" "751db1fa-65af-92c7-84da-1ac3e5773ff0" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:33560 - default
+[2020-03-27T12:11:53.228Z] "POST /devices HTTP/1.1" 200 - "-" "-" 110 393 69 69 "-" "python-requests/2.22.0" "190f52ed-1860-9512-bb6e-0e2b352d530d" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:46506 - default
+[Envoy (Epoch 0)] [2020-03-27 12:16:00.854][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[2020-03-27T12:32:03.049Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 865 865 "-" "python-requests/2.22.0" "eaf20b7b-60fa-96a8-822f-06aad7bfca3c" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:55796 10.233.19.221:8080 10.233.77.8:52636 - default
+[2020-03-27T12:32:03.921Z] "POST /devices HTTP/1.1" 200 - "-" "-" 106 418 73 73 "-" "python-requests/2.22.0" "659bab4c-3bdf-961f-a157-a6c87a78362f" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:37356 - default
+[2020-03-27T12:32:07.041Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 37 36 "-" "python-requests/2.22.0" "0cc5fe6a-dacc-9e68-823f-2944dce5e505" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:52794 - default
+[2020-03-27T12:32:07.082Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 69 69 "-" "python-requests/2.22.0" "08b6c3d8-8450-9fa3-8084-fe6b6125aa9f" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:37508 - default
+[2020-03-27T12:32:10.221Z] "POST /transmission HTTP/1.1" 200 - "-" "-" 99 431 1389 1388 "-" "python-requests/2.22.0" "560c72e7-0fc7-9347-b860-479d2a13fb7e" "vip-event-trigger-service.couch-experience:8080" "10.233.79.52:8080" outbound|8080||vip-event-trigger-service.couch-experience.svc.cluster.local 10.233.77.8:46248 10.233.19.221:8080 10.233.77.8:52848 - default
+[2020-03-27T12:32:11.616Z] "POST /devices HTTP/1.1" 200 - "-" "-" 105 393 70 70 "-" "python-requests/2.22.0" "b70de90a-8bbe-99fe-983e-e97549531e73" "device-identification-service.couch-experience:8080" "10.233.69.196:8080" outbound|8080||device-identification-service.couch-experience.svc.cluster.local 10.233.77.8:48978 10.233.53.94:8080 10.233.77.8:37572 - default
+[Envoy (Epoch 0)] [2020-03-27 12:39:34.115][19][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 

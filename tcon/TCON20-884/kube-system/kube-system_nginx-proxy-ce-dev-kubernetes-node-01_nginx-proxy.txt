@@ -1,0 +1,26 @@
+2020/03/06 23:23:28 [notice] 1#1: using the "epoll" event method
+2020/03/06 23:23:28 [notice] 1#1: nginx/1.17.8
+2020/03/06 23:23:28 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2020/03/06 23:23:28 [notice] 1#1: OS: Linux 4.19.106-coreos
+2020/03/06 23:23:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2020/03/06 23:23:28 [notice] 1#1: start worker processes
+2020/03/06 23:23:28 [notice] 1#1: start worker process 8
+2020/03/06 23:23:28 [notice] 1#1: start worker process 9
+2020/03/18 16:20:26 [error] 8#8: *202274 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:20:26 [warn] 8#8: *202274 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:21:38 [error] 8#8: *202293 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.111:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:21:38 [warn] 8#8: *202293 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.111:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:21:38 [error] 9#9: *202299 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.111:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:21:38 [warn] 9#9: *202299 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.111:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:21:38 [error] 8#8: *202295 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.111:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:21:38 [warn] 8#8: *202295 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.111:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [error] 8#8: *202402 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [warn] 8#8: *202402 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [error] 8#8: *202410 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [warn] 8#8: *202410 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [error] 8#8: *202408 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [warn] 8#8: *202408 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [error] 9#9: *202412 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [warn] 9#9: *202412 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [error] 9#9: *202426 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0
+2020/03/18 16:27:06 [warn] 9#9: *202426 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: 127.0.0.1:6443, upstream: "172.18.16.129:6443", bytes from/to client:0/0, bytes from/to upstream:0/0

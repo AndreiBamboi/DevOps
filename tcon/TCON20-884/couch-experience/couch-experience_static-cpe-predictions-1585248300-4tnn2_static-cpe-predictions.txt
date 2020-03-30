@@ -1,0 +1,163 @@
+2020-03-26T18:45:13.723125Z	info	FLAG: --binaryPath="/usr/local/bin/envoy"
+2020-03-26T18:45:13.723156Z	info	FLAG: --concurrency="2"
+2020-03-26T18:45:13.723161Z	info	FLAG: --configPath="/etc/istio/proxy"
+2020-03-26T18:45:13.723166Z	info	FLAG: --connectTimeout="10s"
+2020-03-26T18:45:13.723169Z	info	FLAG: --controlPlaneAuthPolicy="MUTUAL_TLS"
+2020-03-26T18:45:13.723174Z	info	FLAG: --controlPlaneBootstrap="true"
+2020-03-26T18:45:13.723177Z	info	FLAG: --customConfigFile=""
+2020-03-26T18:45:13.723180Z	info	FLAG: --datadogAgentAddress=""
+2020-03-26T18:45:13.723189Z	info	FLAG: --disableInternalTelemetry="false"
+2020-03-26T18:45:13.723193Z	info	FLAG: --discoveryAddress="istio-pilot.istio-system:15011"
+2020-03-26T18:45:13.723196Z	info	FLAG: --dnsRefreshRate="300s"
+2020-03-26T18:45:13.723199Z	info	FLAG: --domain="couch-experience.svc.cluster.local"
+2020-03-26T18:45:13.723202Z	info	FLAG: --drainDuration="45s"
+2020-03-26T18:45:13.723205Z	info	FLAG: --envoyAccessLogService=""
+2020-03-26T18:45:13.723208Z	info	FLAG: --envoyMetricsService=""
+2020-03-26T18:45:13.723211Z	info	FLAG: --help="false"
+2020-03-26T18:45:13.723214Z	info	FLAG: --id=""
+2020-03-26T18:45:13.723218Z	info	FLAG: --ip=""
+2020-03-26T18:45:13.723220Z	info	FLAG: --lightstepAccessToken=""
+2020-03-26T18:45:13.723224Z	info	FLAG: --lightstepAddress=""
+2020-03-26T18:45:13.723227Z	info	FLAG: --lightstepCacertPath=""
+2020-03-26T18:45:13.723230Z	info	FLAG: --lightstepSecure="false"
+2020-03-26T18:45:13.723233Z	info	FLAG: --log_as_json="false"
+2020-03-26T18:45:13.723236Z	info	FLAG: --log_caller=""
+2020-03-26T18:45:13.723251Z	info	FLAG: --log_output_level="default:info"
+2020-03-26T18:45:13.723257Z	info	FLAG: --log_rotate=""
+2020-03-26T18:45:13.723260Z	info	FLAG: --log_rotate_max_age="30"
+2020-03-26T18:45:13.723264Z	info	FLAG: --log_rotate_max_backups="1000"
+2020-03-26T18:45:13.723267Z	info	FLAG: --log_rotate_max_size="104857600"
+2020-03-26T18:45:13.723270Z	info	FLAG: --log_stacktrace_level="default:none"
+2020-03-26T18:45:13.723572Z	info	FLAG: --log_target="[stdout]"
+2020-03-26T18:45:13.723587Z	info	FLAG: --mixerIdentity=""
+2020-03-26T18:45:13.723592Z	info	FLAG: --outlierLogPath=""
+2020-03-26T18:45:13.723596Z	info	FLAG: --parentShutdownDuration="1m0s"
+2020-03-26T18:45:13.723599Z	info	FLAG: --pilotIdentity=""
+2020-03-26T18:45:13.723604Z	info	FLAG: --proxyAdminPort="15000"
+2020-03-26T18:45:13.723607Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2020-03-26T18:45:13.723610Z	info	FLAG: --proxyLogLevel="warning"
+2020-03-26T18:45:13.723615Z	info	FLAG: --serviceCluster="static-cpe-predictions-1585248300.couch-experience"
+2020-03-26T18:45:13.723618Z	info	FLAG: --serviceregistry="Kubernetes"
+2020-03-26T18:45:13.723621Z	info	FLAG: --statsdUdpAddress=""
+2020-03-26T18:45:13.723625Z	info	FLAG: --statusPort="15020"
+2020-03-26T18:45:13.723628Z	info	FLAG: --stsPort="0"
+2020-03-26T18:45:13.723631Z	info	FLAG: --templateFile=""
+2020-03-26T18:45:13.723634Z	info	FLAG: --tokenManagerPlugin="GoogleTokenExchange"
+2020-03-26T18:45:13.723637Z	info	FLAG: --trust-domain=""
+2020-03-26T18:45:13.723641Z	info	FLAG: --zipkinAddress="zipkin.istio-system:9411"
+2020-03-26T18:45:13.723667Z	info	Version 1.5.0-c3c353285578eb68b334fc8766746b754b6b3789-Clean
+2020-03-26T18:45:13.723797Z	info	Obtained private IP [10.233.84.242 fe80::2091:d4ff:fe8a:24a1]
+2020-03-26T18:45:13.723836Z	info	Proxy role: &model.Proxy{ClusterID:"", Type:"sidecar", IPAddresses:[]string{"10.233.84.242", "10.233.84.242", "fe80::2091:d4ff:fe8a:24a1"}, ID:"static-cpe-predictions-1585248300-4tnn2.couch-experience", Locality:(*envoy_api_v2_core.Locality)(nil), DNSDomain:"couch-experience.svc.cluster.local", ConfigNamespace:"", Metadata:(*model.NodeMetadata)(nil), SidecarScope:(*model.SidecarScope)(nil), MergedGateway:(*model.MergedGateway)(nil), ServiceInstances:[]*model.ServiceInstance(nil), WorkloadLabels:labels.Collection(nil), IstioVersion:(*model.IstioVersion)(nil)}
+2020-03-26T18:45:13.723885Z	info	PilotSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-pilot-service-account"}
+2020-03-26T18:45:13.723892Z	info	MixerSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-mixer-service-account"}
+2020-03-26T18:45:13.724353Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+concurrency: 2
+configPath: /etc/istio/proxy
+connectTimeout: 10s
+controlPlaneAuthPolicy: MUTUAL_TLS
+discoveryAddress: istio-pilot.istio-system:15011
+drainDuration: 45s
+envoyAccessLogService: {}
+envoyMetricsService: {}
+parentShutdownDuration: 60s
+proxyAdminPort: 15000
+serviceCluster: static-cpe-predictions-1585248300.couch-experience
+statNameLength: 189
+tracing:
+  zipkin:
+    address: zipkin.istio-system:9411
+
+2020-03-26T18:45:13.724369Z	info	JWT policy is third-party-jwt
+2020-03-26T18:45:13.724424Z	warn	Missing JWT token, can't use in process SDS ./var/run/secrets/tokens/istio-tokenstat ./var/run/secrets/tokens/istio-token: no such file or directory
+2020-03-26T18:45:13.724433Z	info	Monitored certs: []string{"/etc/certs/root-cert.pem", "/etc/certs/cert-chain.pem", "/etc/certs/key.pem"}
+2020-03-26T18:45:13.724444Z	info	waiting 2m0s for /etc/certs/root-cert.pem
+2020-03-26T18:45:13.724458Z	info	waiting 2m0s for /etc/certs/cert-chain.pem
+2020-03-26T18:45:13.724466Z	info	waiting 2m0s for /etc/certs/key.pem
+2020-03-26T18:45:13.724508Z	info	PilotSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-pilot-service-account"}
+2020-03-26T18:45:13.724519Z	info	Starting proxy agent
+2020-03-26T18:45:13.724637Z	info	Opening status port 15020
+
+2020-03-26T18:45:13.724946Z	info	Received new config, creating new Envoy epoch 0
+2020-03-26T18:45:13.725106Z	info	Epoch 0 starting
+2020-03-26T18:45:13.725126Z	info	watching /etc/certs for changes
+2020-03-26T18:45:13.737369Z	warn	failed to read pod labels: open ./etc/istio/pod/labels: no such file or directory
+2020-03-26T18:45:13.738969Z	info	Envoy command: [-c /etc/istio/proxy/envoy-rev0.json --restart-epoch 0 --drain-time-s 45 --parent-shutdown-time-s 60 --service-cluster static-cpe-predictions-1585248300.couch-experience --service-node sidecar~10.233.84.242~static-cpe-predictions-1585248300-4tnn2.couch-experience~couch-experience.svc.cluster.local --max-obj-name-len 189 --local-address-ip-version v4 --log-format [Envoy (Epoch 0)] [%Y-%m-%d %T.%e][%t][%l][%n] %v -l warning --component-log-level misc:error --concurrency 2]
+[Envoy (Epoch 0)] [2020-03-26 18:45:13.816][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 14, no healthy upstream
+[Envoy (Epoch 0)] [2020-03-26 18:45:13.816][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:54] Unable to establish new stream
+2020-03-26T18:45:14.547462Z	info	Envoy proxy is NOT ready: config not received from Pilot (is Pilot running?): cds updates: 0 successful, 0 rejected; lds updates: 0 successful, 0 rejected
+2020-03-26T18:45:17.546955Z	info	Envoy proxy is NOT ready: Get http://127.0.0.1:15000/stats?usedonly&filter=^(cluster_manager.cds|listener_manager.lds).(update_success|update_rejected)$: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+2020-03-26T18:45:18.549904Z	info	Envoy proxy is ready
+[2020-03-26T18:45:33.042Z] "- - -" 0 - "-" "-" 2601 9182 6359 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.84.242:37178 172.18.2.14:9200 10.233.84.242:37176 - -
+[2020-03-26T18:45:33.049Z] "- - -" 0 - "-" "-" 1442 30918 6352 - "-" "-" "-" "-" "172.18.2.12:9200" PassthroughCluster 10.233.84.242:41356 172.18.2.12:9200 10.233.84.242:41352 - -
+[2020-03-26T18:45:33.029Z] "- - -" 0 - "-" "-" 3117 170170 6372 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.84.242:56996 172.18.2.11:9200 10.233.84.242:56994 - -
+[2020-03-26T18:45:33.013Z] "- - -" 0 - "-" "-" 196 2697 6389 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.84.242:37162 172.18.2.14:9200 10.233.84.242:37160 - -
+[2020-03-26T18:45:33.018Z] "- - -" 0 - "-" "-" 4720 224973 6384 - "-" "-" "-" "-" "172.18.2.12:9200" PassthroughCluster 10.233.84.242:41336 172.18.2.12:9200 10.233.84.242:41334 - -
+[2020-03-26T18:45:33.086Z] "- - -" 0 - "-" "-" 14407 20559 6315 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.84.242:52338 172.18.2.10:9200 10.233.84.242:52336 - -
+[2020-03-26T18:45:33.049Z] "- - -" 0 - "-" "-" 1442 162 6353 - "-" "-" "-" "-" "172.18.2.12:9200" PassthroughCluster 10.233.84.242:41354 172.18.2.12:9200 10.233.84.242:41350 - -
+[2020-03-26T18:45:33.035Z] "- - -" 0 - "-" "-" 2226 4413 6366 - "-" "-" "-" "-" "172.18.2.13:9200" PassthroughCluster 10.233.84.242:49312 172.18.2.13:9200 10.233.84.242:49310 - -
+[Envoy (Epoch 0)] [2020-03-26 18:46:17.316][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 19:17:40.445][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 19:28:58.248][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 19:33:57.428][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 19:53:47.027][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 20:14:05.193][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 20:26:11.333][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 20:46:16.486][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 20:52:37.699][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 21:00:55.259][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 21:29:57.968][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 21:44:40.801][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 22:12:21.921][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 22:42:23.189][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 23:10:55.119][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 23:20:11.377][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 23:34:01.386][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 23:48:41.054][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-26 23:48:58.221][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 00:10:16.232][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 00:20:04.942][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 00:51:54.928][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 01:10:19.463][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 01:38:05.456][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 02:09:19.549][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 02:37:54.841][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 02:42:55.742][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 02:51:45.999][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 02:56:26.700][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 03:24:02.175][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 03:50:36.175][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 03:50:49.157][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 04:19:11.411][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 04:27:17.147][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 04:28:57.627][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 04:41:12.016][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 05:07:57.702][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 05:27:08.568][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 05:36:00.567][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 05:48:47.354][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 05:54:49.160][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 06:06:01.457][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 06:18:22.705][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 06:24:49.271][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 06:46:29.139][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 07:10:28.494][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 07:42:20.999][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:02:05.218][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:20:23.664][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:28:00.778][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:34:55.919][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:40:07.357][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:52:03.949][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 09:02:26.050][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 09:26:00.539][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 09:38:02.850][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 09:47:47.992][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 09:57:01.045][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 10:09:05.691][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 10:40:16.703][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 11:13:15.476][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 11:29:44.664][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 11:41:58.209][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:13:58.820][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:46:20.823][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:58:00.748][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 

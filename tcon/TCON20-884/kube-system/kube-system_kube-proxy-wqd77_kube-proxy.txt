@@ -1,0 +1,21 @@
+I0306 08:47:33.864462       1 node.go:135] Successfully retrieved node IP: 172.18.16.73
+I0306 08:47:33.864510       1 server_others.go:176] Using ipvs Proxier.
+I0306 08:47:33.865010       1 server.go:529] Version: v1.16.3
+I0306 08:47:33.866682       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072
+I0306 08:47:33.866708       1 conntrack.go:52] Setting nf_conntrack_max to 131072
+I0306 08:47:33.866767       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400
+I0306 08:47:33.866807       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600
+I0306 08:47:33.866961       1 config.go:131] Starting endpoints config controller
+I0306 08:47:33.867064       1 shared_informer.go:197] Waiting for caches to sync for endpoints config
+I0306 08:47:33.867093       1 config.go:313] Starting service config controller
+I0306 08:47:33.867108       1 shared_informer.go:197] Waiting for caches to sync for service config
+I0306 08:47:33.967197       1 shared_informer.go:204] Caches are synced for service config 
+I0306 08:47:33.967199       1 shared_informer.go:204] Caches are synced for endpoints config 
+I0306 12:44:33.899888       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.65.40:53
+I0307 00:11:33.990543       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.66.78:53
+I0317 08:47:35.928849       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.66.234:53
+I0317 08:47:35.928906       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.65.209:53
+W0318 16:21:38.753236       1 reflector.go:299] k8s.io/client-go/informers/factory.go:134: watch of *v1.Service ended with: too old resource version: 105948472 (106228205)
+E0324 07:44:37.211124       1 graceful_termination.go:89] Try delete rs "10.233.29.217:29092/TCP/10.233.75.212:29092" err: Failed to delete rs "10.233.29.217:29092/TCP/10.233.75.212:29092", can't find the real server
+I0324 07:44:37.211148       1 graceful_termination.go:93] lw: remote out of the list: 10.233.29.217:29092/TCP/10.233.75.212:29092
+E0324 07:44:37.211156       1 graceful_termination.go:187] Try flush graceful termination list err

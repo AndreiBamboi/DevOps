@@ -1,0 +1,260 @@
+2020-03-27T07:03:20.769315Z	info	FLAG: --binaryPath="/usr/local/bin/envoy"
+2020-03-27T07:03:20.769356Z	info	FLAG: --concurrency="2"
+2020-03-27T07:03:20.769360Z	info	FLAG: --configPath="/etc/istio/proxy"
+2020-03-27T07:03:20.769365Z	info	FLAG: --connectTimeout="10s"
+2020-03-27T07:03:20.769368Z	info	FLAG: --controlPlaneAuthPolicy="MUTUAL_TLS"
+2020-03-27T07:03:20.769372Z	info	FLAG: --controlPlaneBootstrap="true"
+2020-03-27T07:03:20.769375Z	info	FLAG: --customConfigFile=""
+2020-03-27T07:03:20.769378Z	info	FLAG: --datadogAgentAddress=""
+2020-03-27T07:03:20.769380Z	info	FLAG: --disableInternalTelemetry="false"
+2020-03-27T07:03:20.769384Z	info	FLAG: --discoveryAddress="istio-pilot.istio-system:15011"
+2020-03-27T07:03:20.769386Z	info	FLAG: --dnsRefreshRate="300s"
+2020-03-27T07:03:20.769394Z	info	FLAG: --domain="netvis-devel.svc.cluster.local"
+2020-03-27T07:03:20.769397Z	info	FLAG: --drainDuration="45s"
+2020-03-27T07:03:20.769400Z	info	FLAG: --envoyAccessLogService=""
+2020-03-27T07:03:20.769403Z	info	FLAG: --envoyMetricsService=""
+2020-03-27T07:03:20.769405Z	info	FLAG: --help="false"
+2020-03-27T07:03:20.769408Z	info	FLAG: --id=""
+2020-03-27T07:03:20.769411Z	info	FLAG: --ip=""
+2020-03-27T07:03:20.769414Z	info	FLAG: --lightstepAccessToken=""
+2020-03-27T07:03:20.769416Z	info	FLAG: --lightstepAddress=""
+2020-03-27T07:03:20.769419Z	info	FLAG: --lightstepCacertPath=""
+2020-03-27T07:03:20.769422Z	info	FLAG: --lightstepSecure="false"
+2020-03-27T07:03:20.769425Z	info	FLAG: --log_as_json="false"
+2020-03-27T07:03:20.769427Z	info	FLAG: --log_caller=""
+2020-03-27T07:03:20.769430Z	info	FLAG: --log_output_level="default:info"
+2020-03-27T07:03:20.769433Z	info	FLAG: --log_rotate=""
+2020-03-27T07:03:20.769436Z	info	FLAG: --log_rotate_max_age="30"
+2020-03-27T07:03:20.769438Z	info	FLAG: --log_rotate_max_backups="1000"
+2020-03-27T07:03:20.769441Z	info	FLAG: --log_rotate_max_size="104857600"
+2020-03-27T07:03:20.769444Z	info	FLAG: --log_stacktrace_level="default:none"
+2020-03-27T07:03:20.769450Z	info	FLAG: --log_target="[stdout]"
+2020-03-27T07:03:20.769457Z	info	FLAG: --mixerIdentity=""
+2020-03-27T07:03:20.769460Z	info	FLAG: --outlierLogPath=""
+2020-03-27T07:03:20.769463Z	info	FLAG: --parentShutdownDuration="1m0s"
+2020-03-27T07:03:20.769466Z	info	FLAG: --pilotIdentity=""
+2020-03-27T07:03:20.769470Z	info	FLAG: --proxyAdminPort="15000"
+2020-03-27T07:03:20.769473Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2020-03-27T07:03:20.769476Z	info	FLAG: --proxyLogLevel="warning"
+2020-03-27T07:03:20.769479Z	info	FLAG: --serviceCluster="netvis-api.netvis-devel"
+2020-03-27T07:03:20.769482Z	info	FLAG: --serviceregistry="Kubernetes"
+2020-03-27T07:03:20.769484Z	info	FLAG: --statsdUdpAddress=""
+2020-03-27T07:03:20.769487Z	info	FLAG: --statusPort="15020"
+2020-03-27T07:03:20.769490Z	info	FLAG: --stsPort="0"
+2020-03-27T07:03:20.769493Z	info	FLAG: --templateFile=""
+2020-03-27T07:03:20.769496Z	info	FLAG: --tokenManagerPlugin="GoogleTokenExchange"
+2020-03-27T07:03:20.769499Z	info	FLAG: --trust-domain=""
+2020-03-27T07:03:20.769502Z	info	FLAG: --zipkinAddress="zipkin.istio-system:9411"
+2020-03-27T07:03:20.769525Z	info	Version 1.5.0-c3c353285578eb68b334fc8766746b754b6b3789-Clean
+2020-03-27T07:03:20.769639Z	info	Obtained private IP [10.233.77.56 fe80::7c92:94ff:fea6:ee09]
+2020-03-27T07:03:20.769673Z	info	Proxy role: &model.Proxy{ClusterID:"", Type:"sidecar", IPAddresses:[]string{"10.233.77.56", "10.233.77.56", "fe80::7c92:94ff:fea6:ee09"}, ID:"netvis-api-986847c79-268fd.netvis-devel", Locality:(*envoy_api_v2_core.Locality)(nil), DNSDomain:"netvis-devel.svc.cluster.local", ConfigNamespace:"", Metadata:(*model.NodeMetadata)(nil), SidecarScope:(*model.SidecarScope)(nil), MergedGateway:(*model.MergedGateway)(nil), ServiceInstances:[]*model.ServiceInstance(nil), WorkloadLabels:labels.Collection(nil), IstioVersion:(*model.IstioVersion)(nil)}
+2020-03-27T07:03:20.769694Z	info	PilotSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-pilot-service-account"}
+2020-03-27T07:03:20.769699Z	info	MixerSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-mixer-service-account"}
+2020-03-27T07:03:20.770459Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+concurrency: 2
+configPath: /etc/istio/proxy
+connectTimeout: 10s
+controlPlaneAuthPolicy: MUTUAL_TLS
+discoveryAddress: istio-pilot.istio-system:15011
+drainDuration: 45s
+envoyAccessLogService: {}
+envoyMetricsService: {}
+parentShutdownDuration: 60s
+proxyAdminPort: 15000
+serviceCluster: netvis-api.netvis-devel
+statNameLength: 189
+tracing:
+  zipkin:
+    address: zipkin.istio-system:9411
+
+2020-03-27T07:03:20.770470Z	info	JWT policy is third-party-jwt
+2020-03-27T07:03:20.770521Z	warn	Missing JWT token, can't use in process SDS ./var/run/secrets/tokens/istio-tokenstat ./var/run/secrets/tokens/istio-token: no such file or directory
+2020-03-27T07:03:20.770534Z	info	Monitored certs: []string{"/etc/certs/cert-chain.pem", "/etc/certs/key.pem", "/etc/certs/root-cert.pem"}
+2020-03-27T07:03:20.770540Z	info	waiting 2m0s for /etc/certs/cert-chain.pem
+2020-03-27T07:03:20.770554Z	info	waiting 2m0s for /etc/certs/key.pem
+2020-03-27T07:03:20.770566Z	info	waiting 2m0s for /etc/certs/root-cert.pem
+2020-03-27T07:03:20.770595Z	info	PilotSAN []string{"spiffe://cluster.local/ns/istio-system/sa/istio-pilot-service-account"}
+2020-03-27T07:03:20.770609Z	info	Starting proxy agent
+2020-03-27T07:03:20.770647Z	info	Opening status port 15020
+
+2020-03-27T07:03:20.770766Z	info	Received new config, creating new Envoy epoch 0
+2020-03-27T07:03:20.770862Z	info	watching /etc/certs for changes
+2020-03-27T07:03:20.770870Z	info	Epoch 0 starting
+2020-03-27T07:03:20.784334Z	warn	failed to read pod labels: open ./etc/istio/pod/labels: no such file or directory
+2020-03-27T07:03:20.784728Z	info	Envoy command: [-c /etc/istio/proxy/envoy-rev0.json --restart-epoch 0 --drain-time-s 45 --parent-shutdown-time-s 60 --service-cluster netvis-api.netvis-devel --service-node sidecar~10.233.77.56~netvis-api-986847c79-268fd.netvis-devel~netvis-devel.svc.cluster.local --max-obj-name-len 189 --local-address-ip-version v4 --log-format [Envoy (Epoch 0)] [%Y-%m-%d %T.%e][%t][%l][%n] %v -l warning --component-log-level misc:error --concurrency 2]
+[Envoy (Epoch 0)] [2020-03-27 07:03:20.830][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 14, no healthy upstream
+[Envoy (Epoch 0)] [2020-03-27 07:03:20.830][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:54] Unable to establish new stream
+2020-03-27T07:03:22.977489Z	info	Envoy proxy is NOT ready: Get http://127.0.0.1:15000/stats?usedonly&filter=^(cluster_manager.cds|listener_manager.lds).(update_success|update_rejected)$: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+2020-03-27T07:03:23.980003Z	info	Envoy proxy is ready
+[2020-03-27T07:03:26.231Z] "- - -" 0 - "-" "-" 1280 331 11 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.77.56:33962 172.18.2.11:9200 10.233.77.56:33954 - -
+[2020-03-27T07:03:26.347Z] "- - -" 0 - "-" "-" 596 461 7 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.77.56:33976 172.18.2.11:9200 10.233.77.56:33972 - -
+[2020-03-27T07:03:26.231Z] "- - -" 0 - "-" "-" 7218 1397 213 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.77.56:33958 172.18.2.11:9200 10.233.77.56:33950 - -
+[2020-03-27T07:03:26.440Z] "- - -" 0 - "-" "-" 596 448 8 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.77.56:33986 172.18.2.11:9200 10.233.77.56:33982 - -
+[2020-03-27T07:03:26.231Z] "- - -" 0 - "-" "-" 10070 15915 234 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.77.56:33964 172.18.2.11:9200 10.233.77.56:33956 - -
+[2020-03-27T07:03:26.347Z] "- - -" 0 - "-" "-" 7519 14951 340 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.77.56:33978 172.18.2.11:9200 10.233.77.56:33974 - -
+[2020-03-27T07:03:26.231Z] "- - -" 0 - "-" "-" 7255 15008 31310 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.77.56:33960 172.18.2.11:9200 10.233.77.56:33952 - -
+[2020-03-27T07:03:57.537Z] "- - -" 0 - "-" "-" 3290 13688 12 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:48982 172.18.2.14:9200 10.233.77.56:48978 - -
+[2020-03-27T07:03:58.692Z] "- - -" 0 - "-" "-" 1279 331 19 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49004 172.18.2.14:9200 10.233.77.56:49000 - -
+[2020-03-27T07:03:26.440Z] "- - -" 0 - "-" "-" 8427 15610 32511 - "-" "-" "-" "-" "172.18.2.11:9200" PassthroughCluster 10.233.77.56:33988 172.18.2.11:9200 10.233.77.56:33984 - -
+[2020-03-27T07:03:59.819Z] "- - -" 0 - "-" "-" 2775 398 9 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49034 172.18.2.14:9200 10.233.77.56:49028 - -
+[2020-03-27T07:03:58.692Z] "- - -" 0 - "-" "-" 3885 14149 1332 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49006 172.18.2.14:9200 10.233.77.56:49002 - -
+[2020-03-27T07:03:59.819Z] "- - -" 0 - "-" "-" 3541 1401 1631 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49032 172.18.2.14:9200 10.233.77.56:49030 - -
+[2020-03-27T07:03:57.537Z] "- - -" 0 - "-" "-" 10471 15081 4207 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:48980 172.18.2.14:9200 10.233.77.56:48976 - -
+[2020-03-27T07:04:02.523Z] "- - -" 0 - "-" "-" 595 431 9 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49098 172.18.2.14:9200 10.233.77.56:49094 - -
+[2020-03-27T07:04:01.443Z] "- - -" 0 - "-" "-" 4443 13961 1287 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49074 172.18.2.14:9200 10.233.77.56:49072 - -
+[2020-03-27T07:04:03.092Z] "- - -" 0 - "-" "-" 535 374 4 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49134 172.18.2.14:9200 10.233.77.56:49124 - -
+[2020-03-27T07:04:03.092Z] "- - -" 0 - "-" "-" 2590 642 9 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49130 172.18.2.14:9200 10.233.77.56:49126 - -
+[2020-03-27T07:04:02.523Z] "- - -" 0 - "-" "-" 9875 3086 578 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49100 172.18.2.14:9200 10.233.77.56:49096 - -
+[2020-03-27T07:04:03.132Z] "- - -" 0 - "-" "-" 2590 659 9 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49138 172.18.2.14:9200 10.233.77.56:49136 - -
+[2020-03-27T07:04:03.172Z] "- - -" 0 - "-" "-" 2077 812 8 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49146 172.18.2.14:9200 10.233.77.56:49144 - -
+[2020-03-27T07:04:01.443Z] "- - -" 0 - "-" "-" 20185 6881 1737 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49076 172.18.2.14:9200 10.233.77.56:49070 - -
+[2020-03-27T07:04:03.167Z] "- - -" 0 - "-" "-" 5715 3750 53 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49142 172.18.2.14:9200 10.233.77.56:49140 - -
+[2020-03-27T07:04:03.204Z] "- - -" 0 - "-" "-" 12422 5013 62 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49150 172.18.2.14:9200 10.233.77.56:49148 - -
+[2020-03-27T07:04:03.362Z] "- - -" 0 - "-" "-" 2337 1227 12 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49164 172.18.2.14:9200 10.233.77.56:49158 - -
+[2020-03-27T07:04:03.092Z] "- - -" 0 - "-" "-" 32178 15529 283 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49128 172.18.2.14:9200 10.233.77.56:49122 - -
+[2020-03-27T07:04:03.362Z] "- - -" 0 - "-" "-" 3758 14062 21 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49166 172.18.2.14:9200 10.233.77.56:49160 - -
+[2020-03-27T07:04:03.423Z] "- - -" 0 - "-" "-" 535 374 5 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49182 172.18.2.14:9200 10.233.77.56:49172 - -
+[2020-03-27T07:04:03.423Z] "- - -" 0 - "-" "-" 2590 668 9 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49178 172.18.2.14:9200 10.233.77.56:49170 - -
+[2020-03-27T07:04:03.423Z] "- - -" 0 - "-" "-" 2590 642 9 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49180 172.18.2.14:9200 10.233.77.56:49168 - -
+[2020-03-27T07:04:03.423Z] "- - -" 0 - "-" "-" 2077 219 10 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49176 172.18.2.14:9200 10.233.77.56:49174 - -
+[2020-03-27T07:04:03.362Z] "- - -" 0 - "-" "-" 10578 2338 105 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49162 172.18.2.14:9200 10.233.77.56:49156 - -
+[2020-03-27T07:04:03.462Z] "- - -" 0 - "-" "-" 2612 636 9 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49188 172.18.2.14:9200 10.233.77.56:49184 - -
+[2020-03-27T07:04:03.244Z] "- - -" 0 - "-" "-" 17435 8621 263 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49154 172.18.2.14:9200 10.233.77.56:49152 - -
+[2020-03-27T07:04:03.502Z] "- - -" 0 - "-" "-" 524 468 5 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49200 172.18.2.14:9200 10.233.77.56:49194 - -
+[2020-03-27T07:04:03.502Z] "- - -" 0 - "-" "-" 535 472 5 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49198 172.18.2.14:9200 10.233.77.56:49192 - -
+[2020-03-27T07:04:03.509Z] "- - -" 0 - "-" "-" 2077 812 8 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49206 172.18.2.14:9200 10.233.77.56:49204 - -
+[2020-03-27T07:04:03.503Z] "- - -" 0 - "-" "-" 7246 4414 49 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49202 172.18.2.14:9200 10.233.77.56:49196 - -
+[2020-03-27T07:04:03.549Z] "- - -" 0 - "-" "-" 2590 1083 12 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49216 172.18.2.14:9200 10.233.77.56:49212 - -
+[2020-03-27T07:04:03.462Z] "- - -" 0 - "-" "-" 17628 8249 139 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49190 172.18.2.14:9200 10.233.77.56:49186 - -
+[2020-03-27T07:04:03.549Z] "- - -" 0 - "-" "-" 10356 5365 58 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49214 172.18.2.14:9200 10.233.77.56:49210 - -
+[2020-03-27T07:04:03.597Z] "- - -" 0 - "-" "-" 2590 1205 13 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49228 172.18.2.14:9200 10.233.77.56:49222 - -
+[2020-03-27T07:04:03.596Z] "- - -" 0 - "-" "-" 10870 3520 52 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49226 172.18.2.14:9200 10.233.77.56:49218 - -
+[2020-03-27T07:04:03.646Z] "- - -" 0 - "-" "-" 2590 667 8 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49236 172.18.2.14:9200 10.233.77.56:49232 - -
+[2020-03-27T07:04:03.597Z] "- - -" 0 - "-" "-" 17639 5847 107 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49230 172.18.2.14:9200 10.233.77.56:49220 - -
+[2020-03-27T07:04:03.743Z] "- - -" 0 - "-" "-" 2590 1483 11 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49250 172.18.2.14:9200 10.233.77.56:49248 - -
+[2020-03-27T07:04:03.698Z] "- - -" 0 - "-" "-" 5180 3010 61 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49244 172.18.2.14:9200 10.233.77.56:49242 - -
+[2020-03-27T07:04:03.743Z] "- - -" 0 - "-" "-" 3638 2444 59 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49252 172.18.2.14:9200 10.233.77.56:49246 - -
+[2020-03-27T07:04:03.794Z] "- - -" 0 - "-" "-" 5180 2035 20 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49256 172.18.2.14:9200 10.233.77.56:49254 - -
+[2020-03-27T07:04:03.845Z] "- - -" 0 - "-" "-" 2590 1862 13 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49264 172.18.2.14:9200 10.233.77.56:49262 - -
+[2020-03-27T07:04:03.801Z] "- - -" 0 - "-" "-" 5191 3956 107 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49260 172.18.2.14:9200 10.233.77.56:49258 - -
+[2020-03-27T07:04:03.646Z] "- - -" 0 - "-" "-" 38795 15829 3334 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49238 172.18.2.14:9200 10.233.77.56:49234 - -
+[2020-03-27T07:04:06.979Z] "- - -" 0 - "-" "-" 0 0 2 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55746 172.18.2.10:9200 10.233.77.56:55736 - -
+[2020-03-27T07:04:06.979Z] "- - -" 0 - "-" "-" 0 0 2 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55744 172.18.2.10:9200 10.233.77.56:55734 - -
+[2020-03-27T07:04:06.979Z] "- - -" 0 - "-" "-" 528 376 5 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55738 172.18.2.10:9200 10.233.77.56:55728 - -
+[2020-03-27T07:04:03.894Z] "- - -" 0 - "-" "-" 6881 1594 3090 - "-" "-" "-" "-" "172.18.2.14:9200" PassthroughCluster 10.233.77.56:49268 172.18.2.14:9200 10.233.77.56:49266 - -
+[2020-03-27T07:04:06.979Z] "- - -" 0 - "-" "-" 1469 1341 34 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55740 172.18.2.10:9200 10.233.77.56:55730 - -
+[2020-03-27T07:04:07.007Z] "- - -" 0 - "-" "-" 4271 14587 2054 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55758 172.18.2.10:9200 10.233.77.56:55756 - -
+[2020-03-27T07:04:09.083Z] "- - -" 0 - "-" "-" 2590 667 10 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55798 172.18.2.10:9200 10.233.77.56:55794 - -
+[2020-03-27T07:04:09.043Z] "- - -" 0 - "-" "-" 6504 1532 50 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55788 172.18.2.10:9200 10.233.77.56:55786 - -
+[2020-03-27T07:04:09.083Z] "- - -" 0 - "-" "-" 3125 1156 44 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55796 172.18.2.10:9200 10.233.77.56:55792 - -
+[2020-03-27T07:04:06.979Z] "- - -" 0 - "-" "-" 21490 6321 2154 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55742 172.18.2.10:9200 10.233.77.56:55732 - -
+[2020-03-27T07:04:09.125Z] "- - -" 0 - "-" "-" 2590 647 9 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55810 172.18.2.10:9200 10.233.77.56:55800 - -
+[2020-03-27T07:04:09.161Z] "- - -" 0 - "-" "-" 2590 1496 12 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55816 172.18.2.10:9200 10.233.77.56:55812 - -
+[2020-03-27T07:04:09.125Z] "- - -" 0 - "-" "-" 9858 4197 50 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55808 172.18.2.10:9200 10.233.77.56:55802 - -
+[2020-03-27T07:04:09.206Z] "- - -" 0 - "-" "-" 524 463 28 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55830 172.18.2.10:9200 10.233.77.56:55820 - -
+[2020-03-27T07:04:09.206Z] "- - -" 0 - "-" "-" 7242 2524 33 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55828 172.18.2.10:9200 10.233.77.56:55822 - -
+[2020-03-27T07:04:09.161Z] "- - -" 0 - "-" "-" 7792 4832 80 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55818 172.18.2.10:9200 10.233.77.56:55814 - -
+[2020-03-27T07:04:09.277Z] "- - -" 0 - "-" "-" 2590 1281 9 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55838 172.18.2.10:9200 10.233.77.56:55836 - -
+[2020-03-27T07:04:09.125Z] "- - -" 0 - "-" "-" 20771 9923 215 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55806 172.18.2.10:9200 10.233.77.56:55804 - -
+[2020-03-27T07:04:09.333Z] "- - -" 0 - "-" "-" 10418 4028 99 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55842 172.18.2.10:9200 10.233.77.56:55840 - -
+[2020-03-27T07:04:09.474Z] "- - -" 0 - "-" "-" 524 472 5 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55850 172.18.2.10:9200 10.233.77.56:55848 - -
+[2020-03-27T07:04:09.421Z] "- - -" 0 - "-" "-" 15558 6646 96 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55846 172.18.2.10:9200 10.233.77.56:55844 - -
+[2020-03-27T07:04:09.206Z] "- - -" 0 - "-" "-" 44071 18212 327 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55834 172.18.2.10:9200 10.233.77.56:55826 - -
+[2020-03-27T07:04:09.566Z] "- - -" 0 - "-" "-" 2590 1591 10 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55868 172.18.2.10:9200 10.233.77.56:55864 - -
+[2020-03-27T07:04:09.514Z] "- - -" 0 - "-" "-" 9840 5949 69 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55854 172.18.2.10:9200 10.233.77.56:55852 - -
+[2020-03-27T07:04:09.566Z] "- - -" 0 - "-" "-" 6215 1944 1598 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55866 172.18.2.10:9200 10.233.77.56:55862 - -
+[2020-03-27T07:04:11.162Z] "- - -" 0 - "-" "-" 528 371 4 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55922 172.18.2.10:9200 10.233.77.56:55910 - -
+[2020-03-27T07:04:11.161Z] "- - -" 0 - "-" "-" 1168 138 7 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55916 172.18.2.10:9200 10.233.77.56:55908 - -
+[2020-03-27T07:04:11.162Z] "- - -" 0 - "-" "-" 663 250 7 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55920 172.18.2.10:9200 10.233.77.56:55912 - -
+[2020-03-27T07:04:11.162Z] "- - -" 0 - "-" "-" 992 229 9 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55924 172.18.2.10:9200 10.233.77.56:55914 - -
+[2020-03-27T07:04:09.526Z] "- - -" 0 - "-" "-" 4977 2844 1677 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55860 172.18.2.10:9200 10.233.77.56:55858 - -
+[2020-03-27T07:04:11.200Z] "- - -" 0 - "-" "-" 2066 219 8 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55932 172.18.2.10:9200 10.233.77.56:55928 - -
+[2020-03-27T07:04:11.162Z] "- - -" 0 - "-" "-" 4831 1339 1391 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55926 172.18.2.10:9200 10.233.77.56:55918 - -
+[2020-03-27T07:04:12.594Z] "- - -" 0 - "-" "-" 535 390 5 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55976 172.18.2.10:9200 10.233.77.56:55972 - -
+[2020-03-27T07:04:12.547Z] "- - -" 0 - "-" "-" 7809 2868 57 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55966 172.18.2.10:9200 10.233.77.56:55964 - -
+[2020-03-27T07:04:12.633Z] "- - -" 0 - "-" "-" 2590 647 8 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55986 172.18.2.10:9200 10.233.77.56:55982 - -
+[2020-03-27T07:04:12.594Z] "- - -" 0 - "-" "-" 7781 1950 48 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55974 172.18.2.10:9200 10.233.77.56:55970 - -
+[2020-03-27T07:04:12.671Z] "- - -" 0 - "-" "-" 524 468 5 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56002 172.18.2.10:9200 10.233.77.56:55992 - -
+[2020-03-27T07:04:12.671Z] "- - -" 0 - "-" "-" 542 476 5 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55998 172.18.2.10:9200 10.233.77.56:55994 - -
+[2020-03-27T07:04:12.671Z] "- - -" 0 - "-" "-" 524 471 5 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56000 172.18.2.10:9200 10.233.77.56:55996 - -
+[2020-03-27T07:04:12.678Z] "- - -" 0 - "-" "-" 2066 1015 8 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56006 172.18.2.10:9200 10.233.77.56:56004 - -
+[2020-03-27T07:04:12.633Z] "- - -" 0 - "-" "-" 15589 7964 141 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55984 172.18.2.10:9200 10.233.77.56:55980 - -
+[2020-03-27T07:04:12.787Z] "- - -" 0 - "-" "-" 2590 1281 10 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56010 172.18.2.10:9200 10.233.77.56:56008 - -
+[2020-03-27T07:04:12.547Z] "- - -" 0 - "-" "-" 33201 14459 271 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55968 172.18.2.10:9200 10.233.77.56:55962 - -
+[2020-03-27T07:04:12.810Z] "- - -" 0 - "-" "-" 22847 6110 92 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56014 172.18.2.10:9200 10.233.77.56:56012 - -
+[2020-03-27T07:04:11.200Z] "- - -" 0 - "-" "-" 28357 24771 1727 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:55934 172.18.2.10:9200 10.233.77.56:55930 - -
+[2020-03-27T07:04:12.919Z] "- - -" 0 - "-" "-" 2590 2012 24 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56034 172.18.2.10:9200 10.233.77.56:56030 - -
+[2020-03-27T07:04:12.960Z] "- - -" 0 - "-" "-" 2590 952 11 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56040 172.18.2.10:9200 10.233.77.56:56038 - -
+[2020-03-27T07:04:12.919Z] "- - -" 0 - "-" "-" 5726 3033 56 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56032 172.18.2.10:9200 10.233.77.56:56028 - -
+[2020-03-27T07:04:12.891Z] "- - -" 0 - "-" "-" 19694 10229 129 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56024 172.18.2.10:9200 10.233.77.56:56022 - -
+[2020-03-27T07:04:13.009Z] "- - -" 0 - "-" "-" 3096 1065 12 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56060 172.18.2.10:9200 10.233.77.56:56052 - -
+[2020-03-27T07:04:13.009Z] "- - -" 0 - "-" "-" 2581 1781 13 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56056 172.18.2.10:9200 10.233.77.56:56054 - -
+[2020-03-27T07:04:13.013Z] "- - -" 0 - "-" "-" 2066 735 10 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56064 172.18.2.10:9200 10.233.77.56:56062 - -
+[2020-03-27T07:04:13.137Z] "- - -" 0 - "-" "-" 681 250 4 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56082 172.18.2.10:9200 10.233.77.56:56074 - -
+[2020-03-27T07:04:12.960Z] "- - -" 0 - "-" "-" 7715 2826 182 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56042 172.18.2.10:9200 10.233.77.56:56036 - -
+[2020-03-27T07:04:13.136Z] "- - -" 0 - "-" "-" 1360 223 6 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56080 172.18.2.10:9200 10.233.77.56:56072 - -
+[2020-03-27T07:04:13.136Z] "- - -" 0 - "-" "-" 1010 229 6 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56078 172.18.2.10:9200 10.233.77.56:56070 - -
+[2020-03-27T07:04:13.009Z] "- - -" 0 - "-" "-" 9462 3880 166 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56058 172.18.2.10:9200 10.233.77.56:56050 - -
+[2020-03-27T07:04:14.508Z] "- - -" 0 - "-" "-" 1456 1351 9 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56108 172.18.2.10:9200 10.233.77.56:56106 - -
+[2020-03-27T07:04:13.169Z] "- - -" 0 - "-" "-" 4289 14292 1355 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56086 172.18.2.10:9200 10.233.77.56:56084 - -
+[2020-03-27T07:04:13.136Z] "- - -" 0 - "-" "-" 14150 4058 1430 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56076 172.18.2.10:9200 10.233.77.56:56068 - -
+[2020-03-27T07:04:14.508Z] "- - -" 0 - "-" "-" 13507 4533 124 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56110 172.18.2.10:9200 10.233.77.56:56104 - -
+[2020-03-27T07:04:14.638Z] "- - -" 0 - "-" "-" 524 481 4 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56124 172.18.2.10:9200 10.233.77.56:56122 - -
+[2020-03-27T07:04:14.555Z] "- - -" 0 - "-" "-" 23398 7628 126 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56116 172.18.2.10:9200 10.233.77.56:56114 - -
+[2020-03-27T07:04:14.716Z] "- - -" 0 - "-" "-" 524 470 4 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56136 172.18.2.10:9200 10.233.77.56:56132 - -
+[2020-03-27T07:04:14.716Z] "- - -" 0 - "-" "-" 2572 602 16 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56138 172.18.2.10:9200 10.233.77.56:56134 - -
+[2020-03-27T07:04:14.616Z] "- - -" 0 - "-" "-" 27489 15101 151 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56120 172.18.2.10:9200 10.233.77.56:56118 - -
+[2020-03-27T07:04:14.765Z] "- - -" 0 - "-" "-" 2612 716 13 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56146 172.18.2.10:9200 10.233.77.56:56144 - -
+[2020-03-27T07:04:14.800Z] "- - -" 0 - "-" "-" 535 427 4 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56154 172.18.2.10:9200 10.233.77.56:56150 - -
+[2020-03-27T07:04:14.800Z] "- - -" 0 - "-" "-" 524 428 4 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56152 172.18.2.10:9200 10.233.77.56:56148 - -
+[2020-03-27T07:04:14.806Z] "- - -" 0 - "-" "-" 524 440 3 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56158 172.18.2.10:9200 10.233.77.56:56156 - -
+[2020-03-27T07:04:14.660Z] "- - -" 0 - "-" "-" 26969 10201 181 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56130 172.18.2.10:9200 10.233.77.56:56128 - -
+[2020-03-27T07:04:14.839Z] "- - -" 0 - "-" "-" 2590 1483 10 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56164 172.18.2.10:9200 10.233.77.56:56160 - -
+[2020-03-27T07:04:14.870Z] "- - -" 0 - "-" "-" 5180 3500 20 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56172 172.18.2.10:9200 10.233.77.56:56170 - -
+[2020-03-27T07:04:14.915Z] "- - -" 0 - "-" "-" 524 483 4 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56176 172.18.2.10:9200 10.233.77.56:56174 - -
+[2020-03-27T07:04:14.921Z] "- - -" 0 - "-" "-" 2601 1298 12 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56186 172.18.2.10:9200 10.233.77.56:56182 - -
+[2020-03-27T07:04:14.921Z] "- - -" 0 - "-" "-" 2601 1444 16 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56184 172.18.2.10:9200 10.233.77.56:56180 - -
+[2020-03-27T07:04:14.839Z] "- - -" 0 - "-" "-" 17071 7446 90125 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56166 172.18.2.10:9200 10.233.77.56:56162 - -
+[2020-03-27T07:04:14.760Z] "- - -" 0 - "-" "-" 30600 13213 90211 - "-" "-" "-" "-" "172.18.2.10:9200" PassthroughCluster 10.233.77.56:56142 172.18.2.10:9200 10.233.77.56:56140 - -
+[Envoy (Epoch 0)] [2020-03-27 07:10:01.044][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 07:14:49.055][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 07:21:40.613][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 07:51:27.656][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:01:57.512][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[2020-03-27T07:03:26.219Z] "- - -" 0 - "-" "-" 48324 124199 3644944 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:43726 10.233.77.56:9000 10.233.71.198:54608 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:26.345Z] "- - -" 0 - "-" "-" 24814 67694 3646291 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:43760 10.233.77.56:9000 10.233.71.198:54620 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:26.345Z] "- - -" 0 - "-" "-" 3939 2124 3646793 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:43758 10.233.77.56:9000 10.233.71.198:54618 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:26.219Z] "- - -" 0 - "-" "-" 11688 101929 3646953 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:43724 10.233.77.56:9000 10.233.71.198:54606 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:59.817Z] "- - -" 0 - "-" "-" 28936 66233 3614890 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:44296 10.233.77.56:9000 10.233.71.198:55570 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:04:12.635Z] "- - -" 0 - "-" "-" 10553 10927 3602081 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:44938 10.233.77.56:9000 10.233.71.198:55886 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:04:03.089Z] "- - -" 0 - "-" "-" 54959 113929 3611748 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:44390 10.233.77.56:9000 10.233.71.198:55652 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:26.226Z] "- - -" 0 - "-" "-" 38025 79985 3648653 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:43738 10.233.77.56:9000 10.233.71.198:54612 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:26.438Z] "- - -" 0 - "-" "-" 14358 57792 3648451 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:43770 10.233.77.56:9000 10.233.71.198:54624 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:58.688Z] "- - -" 0 - "-" "-" 50981 64984 3616238 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:44268 10.233.77.56:9000 10.233.71.198:55536 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:26.221Z] "- - -" 0 - "-" "-" 26242 33326 3648715 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:43730 10.233.77.56:9000 10.233.71.198:54610 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:03:26.292Z] "- - -" 0 - "-" "-" 115105 220319 3648670 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:43756 10.233.77.56:9000 10.233.71.198:54616 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[2020-03-27T07:04:11.158Z] "- - -" 0 - "-" "-" 49769 106309 3603812 - "-" "-" "-" "-" "127.0.0.1:9000" inbound|9000|netvis-api|netvis-api.netvis-devel.svc.cluster.local 127.0.0.1:44856 10.233.77.56:9000 10.233.71.198:55856 outbound_.9000_._.netvis-api.netvis-devel.svc.cluster.local -
+[Envoy (Epoch 0)] [2020-03-27 08:11:01.054][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:20:23.663][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:33:10.589][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:34:55.918][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:40:07.356][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 08:42:05.406][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 09:11:37.146][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 09:29:56.778][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 09:40:47.892][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 10:13:38.229][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 10:41:06.362][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 10:46:37.942][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 11:00:12.016][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 0, 
+[Envoy (Epoch 0)] [2020-03-27 11:13:15.473][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 11:29:44.666][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 11:41:16.199][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:02:06.870][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:08:00.939][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:11:08.697][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:13:51.514][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:20:59.939][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:30:00.750][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 12:46:20.821][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 13, 
+[Envoy (Epoch 0)] [2020-03-27 13:17:36.916][21][warning][config] [bazel-out/k8-opt/bin/external/envoy/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:91] gRPC config stream closed: 0, 

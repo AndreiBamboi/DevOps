@@ -1,0 +1,19 @@
+I0305 13:43:45.352917       1 node.go:135] Successfully retrieved node IP: 172.18.16.227
+I0305 13:43:45.354236       1 server_others.go:176] Using ipvs Proxier.
+I0305 13:43:45.367034       1 server.go:529] Version: v1.16.3
+I0305 13:43:45.370216       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072
+I0305 13:43:45.370374       1 conntrack.go:52] Setting nf_conntrack_max to 131072
+I0305 13:43:45.370460       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400
+I0305 13:43:45.370542       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600
+I0305 13:43:45.370721       1 config.go:313] Starting service config controller
+I0305 13:43:45.370827       1 config.go:131] Starting endpoints config controller
+I0305 13:43:45.371764       1 shared_informer.go:197] Waiting for caches to sync for service config
+I0305 13:43:45.371846       1 shared_informer.go:197] Waiting for caches to sync for endpoints config
+I0305 13:43:45.471909       1 shared_informer.go:204] Caches are synced for service config 
+I0305 13:43:45.472008       1 shared_informer.go:204] Caches are synced for endpoints config 
+W0305 18:55:47.222649       1 reflector.go:299] k8s.io/client-go/informers/factory.go:134: watch of *v1.Service ended with: too old resource version: 97187601 (97288875)
+I0306 12:44:45.549947       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.65.40:53
+I0307 00:10:45.650803       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.66.78:53
+I0317 08:46:47.574571       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.66.234:53
+I0317 08:47:47.574859       1 graceful_termination.go:93] lw: remote out of the list: 10.233.0.3:53/TCP/10.233.65.209:53
+W0318 16:21:38.929379       1 reflector.go:299] k8s.io/client-go/informers/factory.go:134: watch of *v1.Service ended with: too old resource version: 105948472 (106228205)

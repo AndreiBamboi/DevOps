@@ -1,0 +1,19 @@
+2020/03/18 14:54:10 [INFO] Using Corefile /etc/coredns/Corefile
+2020/03/18 14:54:10 [INFO] Tearing down
+2020/03/18 14:54:11 [INFO] Hit error during teardown - Link not found
+2020/03/18 14:54:11 [INFO] Setting up networking for node cache
+2020/03/18 14:54:11 [ERROR] Failed to read node-cache coreFile /etc/coredns/Corefile.base - open /etc/coredns/Corefile.base: no such file or directory
+2020/03/18 14:54:11 [ERROR] Failed to sync kube-dns config directory /etc/kube-dns, err: lstat /etc/kube-dns: no such file or directory
+cluster.local.:53 on 169.254.25.10
+in-addr.arpa.:53 on 169.254.25.10
+ip6.arpa.:53 on 169.254.25.10
+.:53 on 169.254.25.10
+[INFO] plugin/reload: Running configuration MD5 = adf97d6b4504ff12113ebb35f0c6413e
+   ______                ____  _   _______
+  / ____/___  ________  / __ \/ | / / ___/	~ CoreDNS-1.6.4
+ / /   / __ \/ ___/ _ \/ / / /  |/ /\__ \ 	~ linux/amd64, go1.11.13, 
+/ /___/ /_/ / /  /  __/ /_/ / /|  /___/ / 
+\____/\____/_/   \___/_____/_/ |_//____/  
+[ERROR] plugin/errors: 2 2953685361182518515.4580428093763587872.ip6.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 8939486536235137684.662083560636257402.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 7335000004505483928.5857944052316652118.in-addr.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout

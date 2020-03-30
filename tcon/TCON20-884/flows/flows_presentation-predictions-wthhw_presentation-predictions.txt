@@ -1,0 +1,358 @@
+2020-02-06 13:15:10,397 - INFO - GET http://172.18.2.12:9200/_nodes/_all/http [status:200 request:0.006s]
+2020-02-06 13:15:10,402 - INFO - GET http://172.18.2.13:9200/_cluster/health [status:200 request:0.004s]
+2020-02-06 13:15:10,402 - INFO - Calculating familyMembers
+2020-02-06 13:15:11,597 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=0&filter_path=aggregations.numberOfTerms.value [status:200 request:1.190s]
+2020-02-06 13:15:11,597 - INFO - There are approximately 96 values for device.cpeId.keyword
+2020-02-06 13:15:11,597 - INFO - Iterating through cpes with 2 partitions
+2020-02-06 13:15:11,598 - INFO - Getting partition 1/2
+2020-02-06 13:15:12,647 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=0&filter_path=aggregations.devicecpeIdkeyword.buckets [status:200 request:1.049s]
+2020-02-06 13:15:12,647 - INFO - Getting partition 2/2
+2020-02-06 13:15:12,898 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=0&filter_path=aggregations.devicecpeIdkeyword.buckets [status:200 request:0.251s]
+2020-02-06 13:15:12,899 - INFO - Reading the data for 90500ST2TO18403006923-00E0FC- in Elasticsearch
+2020-02-06 13:15:12,899 - INFO - Reading the data for 90500ST2TO18403006950-00E0FC- in Elasticsearch
+2020-02-06 13:15:12,900 - INFO - Reading the data for 90500ST2TO18403006914-00E0FC- in Elasticsearch
+2020-02-06 13:15:12,900 - INFO - Reading the data for 90500ST2TO18403006920-00E0FC- in Elasticsearch
+2020-02-06 13:15:12,901 - INFO - Reading the data for 90500ST2TO18403006921-00E0FC- in Elasticsearch
+2020-02-06 13:15:12,901 - INFO - Reading the data for 90500ST2TO18403006894-00E0FC- in Elasticsearch
+2020-02-06 13:15:12,902 - INFO - Reading the data for RDK_mac:b827ebce9d8e in Elasticsearch
+2020-02-06 13:15:12,902 - INFO - Reading the data for 90500ST2TO18403006964-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:12,902 - INFO - Reading the data for 90500ST2TO18403006934-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:12,903 - INFO - Reading the data for 90500ST2TO18403006965-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:12,903 - INFO - Reading the data for 90100000000J844023323-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:12,903 - INFO - Reading the data for 90500ST2TO18403006899-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:12,905 - INFO - Reading the data for 90500ST2TO18403006920-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:12,905 - INFO - Reading the data for 90500ST2TO18403006952-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:12,905 - INFO - Reading the data for 90500ST2TO18403006953-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:13,125 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.226s]
+2020-02-06 13:15:13,125 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006923-00E0FC-
+2020-02-06 13:15:13,125 - INFO - Reading the data for 90500ST2TO18403006948-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:13,257 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.357s]
+2020-02-06 13:15:13,260 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006950-00E0FC-
+2020-02-06 13:15:13,261 - INFO - Reading the data for 90500ST2TO18403006951-00E0FC- in Elasticsearch
+2020-02-06 13:15:14,460 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.558s]
+2020-02-06 13:15:14,513 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006914-00E0FC-
+2020-02-06 13:15:14,541 - INFO - Reading the data for 90500ST2TO18403006965-00E0FC- in Elasticsearch
+2020-02-06 13:15:14,551 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.641s]
+2020-02-06 13:15:14,623 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006953-00E0FC-DTWSMART2VH
+2020-02-06 13:15:14,643 - INFO - Reading the data for 90500ST2TO18403006947-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:14,788 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.880s]
+2020-02-06 13:15:14,829 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006899-00E0FC-DTWSMART2VH
+2020-02-06 13:15:14,849 - INFO - Reading the data for 90500ST2TO18403006894-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:14,865 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.961s]
+2020-02-06 13:15:14,885 - INFO - Preparing sample for x-means on cpe RDK_mac:b827ebce9d8e
+2020-02-06 13:15:14,891 - INFO - Reading the data for RDK_mac:b827eb69b2aa in Elasticsearch
+2020-02-06 13:15:15,353 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.443s]
+2020-02-06 13:15:15,454 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006920-00E0FC-DTWSMART2VH
+2020-02-06 13:15:15,461 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.555s]
+2020-02-06 13:15:15,544 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006964-00E0FC-DTWSMART2VH
+2020-02-06 13:15:15,617 - INFO - Reading the data for 90500ST2TO18403006911-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:15,630 - INFO - Reading the data for 90500ST2TO18403006977-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:15,669 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.765s]
+2020-02-06 13:15:15,736 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006921-00E0FC-
+2020-02-06 13:15:15,743 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.850s]
+2020-02-06 13:15:15,773 - INFO - Preparing sample for x-means on cpe RDK_mac:b827eb69b2aa
+2020-02-06 13:15:15,786 - INFO - Reading the data for 90500ST2TO18403006928-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:15,794 - INFO - Reading the data for 90500ST2TO18403006954-00E0FC- in Elasticsearch
+2020-02-06 13:15:15,833 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.569s]
+2020-02-06 13:15:15,911 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.117s]
+2020-02-06 13:15:15,911 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006951-00E0FC-
+2020-02-06 13:15:15,912 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006954-00E0FC-
+2020-02-06 13:15:15,922 - INFO - Reading the data for 90500ST2TO18403006934-00E0FC- in Elasticsearch
+2020-02-06 13:15:15,946 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:3.043s]
+2020-02-06 13:15:16,078 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006920-00E0FC-
+2020-02-06 13:15:16,079 - INFO - Reading the data for 90500ST2TO18403006913-00E0FC- in Elasticsearch
+2020-02-06 13:15:16,095 - WARNING - Connection pool is full, discarding connection: 172.18.2.13
+2020-02-06 13:15:16,109 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:3.201s]
+2020-02-06 13:15:16,112 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.984s]
+2020-02-06 13:15:16,334 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006934-00E0FC-DTWSMART2VH
+2020-02-06 13:15:16,345 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006948-00E0FC-DTWSMART2VH
+2020-02-06 13:15:16,414 - INFO - Reading the data for 90500ST2TO18403006973-00E0FC- in Elasticsearch
+2020-02-06 13:15:16,434 - INFO - Reading the data for 90500ST2DB18104000038-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:16,444 - INFO - Reading the data for 90500ST2TO18403006950-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:16,463 - WARNING - Connection pool is full, discarding connection: 172.18.2.13
+2020-02-06 13:15:16,466 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:3.557s]
+2020-02-06 13:15:16,527 - INFO - Preparing sample for x-means on cpe 90100000000J844023323-001A2A-DTWSMART3VA
+2020-02-06 13:15:16,533 - WARNING - Connection pool is full, discarding connection: 172.18.2.13
+2020-02-06 13:15:16,551 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:3.646s]
+2020-02-06 13:15:16,670 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.226s]
+2020-02-06 13:15:16,671 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006950-00E0FC-DTWSMART2VH
+2020-02-06 13:15:16,672 - INFO - Reading the data for 90500ST2TO18403006945-00E0FC- in Elasticsearch
+2020-02-06 13:15:16,670 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006894-00E0FC-
+2020-02-06 13:15:16,694 - WARNING - Connection pool is full, discarding connection: 172.18.2.13
+2020-02-06 13:15:16,707 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:3.795s]
+2020-02-06 13:15:16,875 - INFO - Reading the data for 90500ST2TO18403006914-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:16,876 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.204s]
+2020-02-06 13:15:16,876 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006945-00E0FC-
+2020-02-06 13:15:16,876 - INFO - Reading the data for 90100000000J844021995-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:16,879 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.335s]
+2020-02-06 13:15:16,879 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006952-00E0FC-DTWSMART2VH
+2020-02-06 13:15:16,955 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006965-00E0FC-
+2020-02-06 13:15:16,955 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.075s]
+2020-02-06 13:15:16,970 - INFO - Reading the data for 90500ST2TO18403006922-00E0FC- in Elasticsearch
+2020-02-06 13:15:16,981 - INFO - Preparing sample for x-means on cpe 90100000000J844021995-001A2A-DTWSMART3VA
+2020-02-06 13:15:17,018 - INFO - Reading the data for 90500ST2TO18403006960-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:17,054 - WARNING - Connection pool is full, discarding connection: 172.18.2.13
+2020-02-06 13:15:17,054 - INFO - Reading the data for 90500ST2TO18403006913-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:17,057 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:4.149s]
+2020-02-06 13:15:17,186 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006965-00E0FC-DTWSMART2VH
+2020-02-06 13:15:17,201 - INFO - Reading the data for 90500ST2TO18403006916-00E0FC- in Elasticsearch
+2020-02-06 13:15:17,218 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.200s]
+2020-02-06 13:15:17,225 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006960-00E0FC-DTWSMART2VH
+2020-02-06 13:15:17,225 - INFO - Reading the data for 90500ST2TO18403006971-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:17,226 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.025s]
+2020-02-06 13:15:17,227 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006916-00E0FC-
+2020-02-06 13:15:17,227 - INFO - Reading the data for 90100000000J847007059-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:17,240 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.013s]
+2020-02-06 13:15:17,240 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006971-00E0FC-DTWSMART2VH
+2020-02-06 13:15:17,252 - INFO - Reading the data for 90100000000J844035045-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:17,252 - INFO - Reading the data for 90500ST2TO18403006929-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:17,256 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.611s]
+2020-02-06 13:15:17,321 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006947-00E0FC-DTWSMART2VH
+2020-02-06 13:15:17,328 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.232s]
+2020-02-06 13:15:17,427 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006913-00E0FC-
+2020-02-06 13:15:17,460 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.609s]
+2020-02-06 13:15:17,538 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006894-00E0FC-DTWSMART2VH
+2020-02-06 13:15:17,576 - INFO - Reading the data for 90500ST2TO18403006911-00E0FC- in Elasticsearch
+2020-02-06 13:15:17,584 - INFO - Reading the data for 90500ST2TO18403006949-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:17,602 - INFO - Reading the data for 90500ST2TO18403006945-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:17,624 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.991s]
+2020-02-06 13:15:17,728 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006977-00E0FC-DTWSMART2VH
+2020-02-06 13:15:17,746 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.958s]
+2020-02-06 13:15:17,823 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006928-00E0FC-DTWSMART2VH
+2020-02-06 13:15:17,847 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.426s]
+2020-02-06 13:15:17,983 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006973-00E0FC-
+2020-02-06 13:15:18,027 - INFO - Reading the data for 90100000000J844012365-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:18,027 - INFO - Reading the data for 90500ST2TO18403006919-00E0FC- in Elasticsearch
+2020-02-06 13:15:18,043 - INFO - Reading the data for 90500ST2TO18403006939-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:18,048 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.428s]
+2020-02-06 13:15:18,121 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006911-00E0FC-DTWSMART2VH
+2020-02-06 13:15:18,159 - INFO - Reading the data for 90500ST2TO18403006926-00E0FC- in Elasticsearch
+2020-02-06 13:15:18,168 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.170s]
+2020-02-06 13:15:18,235 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006922-00E0FC-
+2020-02-06 13:15:18,263 - INFO - Reading the data for 90500ST2TO18403006953-00E0FC- in Elasticsearch
+2020-02-06 13:15:18,272 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.341s]
+2020-02-06 13:15:18,344 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006934-00E0FC-
+2020-02-06 13:15:18,383 - INFO - Reading the data for 90500ST2TO18312005223-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:18,401 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.017s]
+2020-02-06 13:15:18,401 - INFO - Preparing sample for x-means on cpe 90500ST2TO18312005223-00E0FC-DTWSMART2VH
+2020-02-06 13:15:18,401 - INFO - Reading the data for 90500ST2TO18403006947-00E0FC- in Elasticsearch
+2020-02-06 13:15:18,407 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.530s]
+2020-02-06 13:15:18,486 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006914-00E0FC-DTWSMART2VH
+2020-02-06 13:15:18,511 - INFO - Reading the data for 90500ST2TO18403006952-00E0FC- in Elasticsearch
+2020-02-06 13:15:18,529 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.093s]
+2020-02-06 13:15:18,589 - INFO - Preparing sample for x-means on cpe 90500ST2DB18104000038-00E0FC-DTWSMART2VH
+2020-02-06 13:15:18,615 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.025s]
+2020-02-06 13:15:18,702 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006949-00E0FC-DTWSMART2VH
+2020-02-06 13:15:18,734 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.675s]
+2020-02-06 13:15:18,736 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.483s]
+2020-02-06 13:15:18,806 - INFO - Reading the data for 90500ST2TO18403006929-00E0FC- in Elasticsearch
+2020-02-06 13:15:18,806 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006913-00E0FC-DTWSMART2VH
+2020-02-06 13:15:18,847 - INFO - Preparing sample for x-means on cpe 90100000000J844035045-001A2A-DTWSMART3VA
+2020-02-06 13:15:18,871 - INFO - Reading the data for 90100000000J844011813-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:18,911 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.063s]
+2020-02-06 13:15:18,911 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006929-00E0FC-
+2020-02-06 13:15:18,922 - INFO - Reading the data for 90500ST2TO18403006944-00E0FC- in Elasticsearch
+2020-02-06 13:15:18,922 - INFO - Reading the data for 90100000000J844012789-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:18,922 - INFO - Reading the data for 90500ST2TO18403006917-00E0FC- in Elasticsearch
+2020-02-06 13:15:18,943 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.340s]
+2020-02-06 13:15:19,029 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006945-00E0FC-DTWSMART2VH
+2020-02-06 13:15:19,051 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.823s]
+2020-02-06 13:15:19,117 - INFO - Preparing sample for x-means on cpe 90100000000J847007059-001A2A-DTWSMART3VA
+2020-02-06 13:15:19,119 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.865s]
+2020-02-06 13:15:19,265 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006929-00E0FC-DTWSMART2VH
+2020-02-06 13:15:19,339 - INFO - Reading the data for 90500ST2TO18403006956-00E0FC- in Elasticsearch
+2020-02-06 13:15:19,340 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.312s]
+2020-02-06 13:15:19,382 - INFO - Reading the data for 90100000000J844011289-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:19,383 - INFO - Reading the data for 90500ST2TO18403006951-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:19,383 - INFO - Preparing sample for x-means on cpe 90100000000J844012365-001A2A-DTWSMART3VA
+2020-02-06 13:15:19,406 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.143s]
+2020-02-06 13:15:19,440 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006953-00E0FC-
+2020-02-06 13:15:19,444 - INFO - Reading the data for 90500ST2TO18403006956-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:19,466 - INFO - Reading the data for 90500ST2TO18403006925-00E0FC- in Elasticsearch
+2020-02-06 13:15:19,510 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.922s]
+2020-02-06 13:15:19,608 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006911-00E0FC-
+2020-02-06 13:15:19,614 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.454s]
+2020-02-06 13:15:19,698 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006926-00E0FC-
+2020-02-06 13:15:19,758 - INFO - Reading the data for 90500ST2TO18403006926-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:19,758 - INFO - Reading the data for 90500ST2TO18403006944-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:19,827 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.314s]
+2020-02-06 13:15:19,908 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006952-00E0FC-
+2020-02-06 13:15:19,944 - INFO - Reading the data for 90500ST2TO18403006964-00E0FC- in Elasticsearch
+2020-02-06 13:15:19,955 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.925s]
+2020-02-06 13:15:20,018 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006919-00E0FC-
+2020-02-06 13:15:20,060 - INFO - Reading the data for 90500ST2TO18403006954-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:20,065 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.183s]
+2020-02-06 13:15:20,126 - INFO - Preparing sample for x-means on cpe 90100000000J844011813-001A2A-DTWSMART3VA
+2020-02-06 13:15:20,127 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.066s]
+2020-02-06 13:15:20,133 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006954-00E0FC-DTWSMART2VH
+2020-02-06 13:15:20,133 - INFO - Reading the data for 90500ST2TO18403006977-00E0FC- in Elasticsearch
+2020-02-06 13:15:20,152 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.227s]
+2020-02-06 13:15:20,155 - INFO - Reading the data for 90500ST2TO18403006942-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:20,203 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006917-00E0FC-
+2020-02-06 13:15:20,226 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.302s]
+2020-02-06 13:15:20,265 - INFO - Preparing sample for x-means on cpe 90100000000J844012789-001A2A-DTWSMART3VA
+2020-02-06 13:15:20,284 - INFO - Reading the data for 90500ST2TO18403006905-00E0FC- in Elasticsearch
+2020-02-06 13:15:20,290 - INFO - Reading the data for 90500ST2TO18403006927-00E0FC- in Elasticsearch
+2020-02-06 13:15:20,295 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.892s]
+2020-02-06 13:15:20,383 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006947-00E0FC-
+2020-02-06 13:15:20,409 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.485s]
+2020-02-06 13:15:20,460 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006944-00E0FC-
+2020-02-06 13:15:20,495 - INFO - Reading the data for 90500ST2TO18403006973-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:20,495 - INFO - Reading the data for 90500ST2TO18403006912-00E0FC- in Elasticsearch
+2020-02-06 13:15:20,519 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.179s]
+2020-02-06 13:15:20,590 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006956-00E0FC-
+2020-02-06 13:15:20,627 - INFO - Reading the data for 90500ST2DB17808000082-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:20,633 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.588s]
+2020-02-06 13:15:20,701 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.074s]
+2020-02-06 13:15:20,701 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006939-00E0FC-DTWSMART2VH
+2020-02-06 13:15:20,702 - INFO - Preparing sample for x-means on cpe 90500ST2DB17808000082-00E0FC-DTWSMART2VH
+2020-02-06 13:15:20,717 - INFO - Reading the data for 90500ST2TO18403006921-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:20,745 - INFO - Reading the data for 90500ST2TO18403006959-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:20,753 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.993s]
+2020-02-06 13:15:20,811 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006944-00E0FC-DTWSMART2VH
+2020-02-06 13:15:20,823 - INFO - Reading the data for 90500ST2TO18403006937-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:20,838 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.369s]
+2020-02-06 13:15:20,901 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006925-00E0FC-
+2020-02-06 13:15:20,907 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.452s]
+2020-02-06 13:15:21,036 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006956-00E0FC-DTWSMART2VH
+2020-02-06 13:15:21,085 - INFO - Reading the data for 90500ST2TO18403006912-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:21,092 - INFO - Reading the data for 90500ST2TO18403006923-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:21,148 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.055s]
+2020-02-06 13:15:21,148 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006923-00E0FC-DTWSMART2VH
+2020-02-06 13:15:21,148 - INFO - Reading the data for 90500ST2TO18403006899-00E0FC- in Elasticsearch
+2020-02-06 13:15:21,155 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.772s]
+2020-02-06 13:15:21,217 - INFO - Preparing sample for x-means on cpe 90100000000J844011289-001A2A-DTWSMART3VA
+2020-02-06 13:15:21,257 - INFO - Reading the data for 90500ST2TO18403006925-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:21,350 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.590s]
+2020-02-06 13:15:21,451 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006926-00E0FC-DTWSMART2VH
+2020-02-06 13:15:21,489 - INFO - Reading the data for 90500ST2TO18403006968-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:21,546 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.254s]
+2020-02-06 13:15:21,607 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006905-00E0FC-
+2020-02-06 13:15:21,643 - INFO - Reading the data for 90500ST2TO18403006970-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:21,658 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.913s]
+2020-02-06 13:15:21,729 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006959-00E0FC-DTWSMART2VH
+2020-02-06 13:15:21,732 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.346s]
+2020-02-06 13:15:21,829 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006951-00E0FC-DTWSMART2VH
+2020-02-06 13:15:21,831 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.885s]
+2020-02-06 13:15:21,985 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006964-00E0FC-
+2020-02-06 13:15:22,050 - INFO - Reading the data for 90500ST2TO18403006919-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:22,085 - INFO - Reading the data for 90100000000J846009232-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:22,095 - INFO - Reading the data for 90500ST2TO18403006927-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:22,096 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.272s]
+2020-02-06 13:15:22,125 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.628s]
+2020-02-06 13:15:22,125 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006937-00E0FC-DTWSMART2VH
+2020-02-06 13:15:22,183 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006973-00E0FC-DTWSMART2VH
+2020-02-06 13:15:22,201 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.483s]
+2020-02-06 13:15:22,205 - INFO - Reading the data for 90500ST2TO18403006936-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:22,287 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006921-00E0FC-DTWSMART2VH
+2020-02-06 13:15:22,309 - INFO - Reading the data for 90500ST2TO18403006917-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:22,321 - INFO - Reading the data for 90100000000J824019508-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:22,323 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.118s]
+2020-02-06 13:15:22,390 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006942-00E0FC-DTWSMART2VH
+2020-02-06 13:15:22,413 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.092s]
+2020-02-06 13:15:22,413 - INFO - Preparing sample for x-means on cpe 90100000000J824019508-001A2A-DTWSMART3VA
+2020-02-06 13:15:22,413 - INFO - Reading the data for RDK_mac:112233445566 in Elasticsearch
+2020-02-06 13:15:22,414 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.265s]
+2020-02-06 13:15:22,495 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006899-00E0FC-
+2020-02-06 13:15:22,501 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.406s]
+2020-02-06 13:15:22,516 - INFO - Preparing sample for x-means on cpe 90100000000J846009232-001A2A-DTWSMART3VA
+2020-02-06 13:15:22,529 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.031s]
+2020-02-06 13:15:22,602 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006912-00E0FC-
+2020-02-06 13:15:22,605 - INFO - Reading the data for 90100000000J844011312-001A2A-DTWSMART3VA in Elasticsearch
+2020-02-06 13:15:22,643 - INFO - Reading the data for 90500ST2TO18403006922-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:22,655 - INFO - Reading the data for 90500ST2DB17808000391-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:22,675 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.383s]
+2020-02-06 13:15:22,764 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006927-00E0FC-
+2020-02-06 13:15:22,807 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.713s]
+2020-02-06 13:15:22,874 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006912-00E0FC-DTWSMART2VH
+2020-02-06 13:15:22,904 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.770s]
+2020-02-06 13:15:23,038 - INFO - Reading the data for 90500ST2TO18403006905-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:23,039 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006977-00E0FC-
+2020-02-06 13:15:23,039 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.383s]
+2020-02-06 13:15:23,051 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.638s]
+2020-02-06 13:15:23,058 - INFO - Preparing sample for x-means on cpe 90500ST2DB17808000391-00E0FC-DTWSMART2VH
+2020-02-06 13:15:23,059 - INFO - Preparing sample for x-means on cpe RDK_mac:112233445566
+2020-02-06 13:15:23,059 - INFO - Reading the data for RDK_mac:b827ebe39250 in Elasticsearch
+2020-02-06 13:15:23,068 - INFO - GET http://172.18.2.10:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.007s]
+2020-02-06 13:15:23,068 - INFO - Preparing sample for x-means on cpe RDK_mac:b827ebe39250
+2020-02-06 13:15:23,092 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.448s]
+2020-02-06 13:15:23,157 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006970-00E0FC-DTWSMART2VH
+2020-02-06 13:15:23,194 - INFO - Reading the data for 90500ST2TO18403006916-00E0FC-DTWSMART2VH in Elasticsearch
+2020-02-06 13:15:23,204 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.010s]
+2020-02-06 13:15:23,204 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006916-00E0FC-DTWSMART2VH
+2020-02-06 13:15:23,216 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.957s]
+2020-02-06 13:15:23,307 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006925-00E0FC-DTWSMART2VH
+2020-02-06 13:15:23,307 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.251s]
+2020-02-06 13:15:23,368 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006919-00E0FC-DTWSMART2VH
+2020-02-06 13:15:23,411 - INFO - Reading the data for RDK_mac:b827eb5328c3 in Elasticsearch
+2020-02-06 13:15:23,415 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.799s]
+2020-02-06 13:15:23,415 - INFO - Preparing sample for x-means on cpe 90100000000J844011312-001A2A-DTWSMART3VA
+2020-02-06 13:15:23,437 - INFO - GET http://172.18.2.11:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.340s]
+2020-02-06 13:15:23,522 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006927-00E0FC-DTWSMART2VH
+2020-02-06 13:15:23,543 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:0.132s]
+2020-02-06 13:15:23,543 - INFO - Preparing sample for x-means on cpe RDK_mac:b827eb5328c3
+2020-02-06 13:15:23,570 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.077s]
+2020-02-06 13:15:23,639 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006968-00E0FC-DTWSMART2VH
+2020-02-06 13:15:23,697 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.387s]
+2020-02-06 13:15:23,773 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006917-00E0FC-DTWSMART2VH
+2020-02-06 13:15:23,839 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.195s]
+2020-02-06 13:15:23,888 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006922-00E0FC-DTWSMART2VH
+2020-02-06 13:15:24,335 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:1.295s]
+2020-02-06 13:15:24,430 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006905-00E0FC-DTWSMART2VH
+2020-02-06 13:15:24,574 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=1500&filter_path=hits.hits.inner_hits%2Caggregations.devices.ssidFilter.physAddresses.buckets [status:200 request:2.283s]
+2020-02-06 13:15:24,643 - INFO - Preparing sample for x-means on cpe 90500ST2TO18403006936-00E0FC-DTWSMART2VH
+2020-02-06 13:15:24,762 - INFO - GET http://172.18.2.14:9200/nested_rawdata/_search?size=0&filter_path=aggregations.numberOfTerms.value [status:200 request:0.083s]
+2020-02-06 13:15:24,762 - INFO - There are approximately 96 values for device.cpeId.keyword
+2020-02-06 13:15:24,762 - INFO - Iterating through cpes with 2 partitions
+2020-02-06 13:15:24,763 - INFO - Getting partition 1/2
+2020-02-06 13:15:24,815 - INFO - GET http://172.18.2.13:9200/nested_rawdata/_search?size=0&filter_path=aggregations.devicecpeIdkeyword.buckets [status:200 request:0.052s]
+2020-02-06 13:15:24,815 - INFO - Getting partition 2/2
+2020-02-06 13:15:24,860 - INFO - GET http://172.18.2.12:9200/nested_rawdata/_search?size=0&filter_path=aggregations.devicecpeIdkeyword.buckets [status:200 request:0.045s]
+2020-02-06 13:15:24,861 - INFO - Calculating atHomeTimes
+2020-02-06 13:15:24,861 - INFO - Reading from Elasticsearch to predict at home times
+2020-02-06 13:15:25,304 - INFO - GET http://172.18.2.10:9200/netvis_cpe/_search?size=0&filter_path=aggregations.numberOfTerms.value [status:200 request:0.443s]
+2020-02-06 13:15:25,304 - INFO - There are approximately 51 values for cpeId
+2020-02-06 13:15:25,304 - INFO - Iterating through cpes with 2 partitions
+2020-02-06 13:15:25,304 - INFO - Getting partition 1/2
+2020-02-06 13:15:27,012 - INFO - GET http://172.18.2.11:9200/netvis_cpe/_search?size=0&filter_path=aggregations.cpeId.buckets.dayOfWeek.buckets.key%2Caggregations.cpeId.buckets.dayOfWeek.buckets.atHomeLimit%2Caggregations.cpeId.buckets.dayOfWeek.buckets.hour.buckets.key%2Caggregations.cpeId.buckets.dayOfWeek.buckets.hour.buckets.numberOfDevices.value%2Caggregations.cpeId.buckets.key [status:200 request:1.707s]
+2020-02-06 13:15:27,016 - INFO - Getting partition 2/2
+2020-02-06 13:15:28,885 - INFO - GET http://172.18.2.14:9200/netvis_cpe/_search?size=0&filter_path=aggregations.cpeId.buckets.dayOfWeek.buckets.key%2Caggregations.cpeId.buckets.dayOfWeek.buckets.atHomeLimit%2Caggregations.cpeId.buckets.dayOfWeek.buckets.hour.buckets.key%2Caggregations.cpeId.buckets.dayOfWeek.buckets.hour.buckets.numberOfDevices.value%2Caggregations.cpeId.buckets.key [status:200 request:1.868s]
+2020-02-06 13:15:28,890 - INFO - Extractig relevant data from Elasticsearch to predict at home times
+2020-02-06 13:15:28,896 - INFO - Calculating technologyAffinityScores
+2020-02-06 13:15:28,897 - INFO - Reading the data from netvis_cpe in Elasticsearch
+2020-02-06 13:15:28,925 - INFO - GET http://172.18.2.13:9200/netvis_cpe/_search?size=0&filter_path=aggregations.numberOfTerms.value [status:200 request:0.028s]
+2020-02-06 13:15:28,925 - INFO - There are approximately 51 values for cpeId
+2020-02-06 13:15:28,925 - INFO - Iterating through cpes with 2 partitions
+2020-02-06 13:15:28,925 - INFO - Getting partition 1/2
+2020-02-06 13:15:29,360 - INFO - GET http://172.18.2.12:9200/netvis_cpe/_search?size=0&filter_path=aggregations.cpeId.buckets.%2A%2A.value%2Caggregations.cpeId.buckets.key [status:200 request:0.435s]
+2020-02-06 13:15:29,360 - INFO - Getting partition 2/2
+2020-02-06 13:15:30,381 - INFO - GET http://172.18.2.10:9200/netvis_cpe/_search?size=0&filter_path=aggregations.cpeId.buckets.%2A%2A.value%2Caggregations.cpeId.buckets.key [status:200 request:1.020s]
+2020-02-06 13:15:30,382 - INFO - Reading the data from netvis_device in Elasticsearch
+2020-02-06 13:15:31,054 - INFO - GET http://172.18.2.11:9200/netvis_device/_search?size=0&filter_path=aggregations.numberOfTerms.value [status:200 request:0.672s]
+2020-02-06 13:15:31,054 - INFO - There are approximately 46 values for cpeId
+2020-02-06 13:15:31,054 - INFO - Iterating through cpes with 2 partitions
+2020-02-06 13:15:31,054 - INFO - Getting partition 1/2
+2020-02-06 13:15:31,996 - INFO - GET http://172.18.2.14:9200/netvis_device/_search?size=0&filter_path=aggregations.cpeId.buckets.%2A%2A.value%2Caggregations.cpeId.buckets.key [status:200 request:0.941s]
+2020-02-06 13:15:31,996 - INFO - Getting partition 2/2
+2020-02-06 13:15:34,680 - INFO - GET http://172.18.2.13:9200/netvis_device/_search?size=0&filter_path=aggregations.cpeId.buckets.%2A%2A.value%2Caggregations.cpeId.buckets.key [status:200 request:2.684s]
+2020-02-06 13:15:34,685 - INFO - Reading the data from netvis_device in Elasticsearch
+2020-02-06 13:15:34,687 - INFO - GET http://172.18.2.12:9200/netvis_device/_search?size=0&filter_path=aggregations.numberOfTerms.value [status:200 request:0.003s]
+2020-02-06 13:15:34,688 - INFO - There are approximately 46 values for cpeId
+2020-02-06 13:15:34,688 - INFO - Iterating through cpes with 2 partitions
+2020-02-06 13:15:34,688 - INFO - Getting partition 1/2
+2020-02-06 13:15:35,906 - INFO - GET http://172.18.2.10:9200/netvis_device/_search?size=0&filter_path=aggregations.cpeId.buckets.%2A%2A.value%2Caggregations.cpeId.buckets.key [status:200 request:1.218s]
+2020-02-06 13:15:35,906 - INFO - Getting partition 2/2
+2020-02-06 13:15:38,482 - INFO - GET http://172.18.2.11:9200/netvis_device/_search?size=0&filter_path=aggregations.cpeId.buckets.%2A%2A.value%2Caggregations.cpeId.buckets.key [status:200 request:2.576s]
+2020-02-06 13:15:38,482 - INFO - Reading the data from netvis_cpe in Elasticsearch
+2020-02-06 13:15:38,485 - INFO - GET http://172.18.2.14:9200/netvis_cpe/_search?size=0&filter_path=aggregations.numberOfTerms.value [status:200 request:0.002s]
+2020-02-06 13:15:38,485 - INFO - There are approximately 51 values for cpeId
+2020-02-06 13:15:38,485 - INFO - Iterating through cpes with 2 partitions
+2020-02-06 13:15:38,485 - INFO - Getting partition 1/2
+2020-02-06 13:15:38,619 - INFO - GET http://172.18.2.13:9200/netvis_cpe/_search?size=0&filter_path=aggregations.cpeId.buckets.%2A%2A.value%2Caggregations.cpeId.buckets.key [status:200 request:0.134s]
+2020-02-06 13:15:38,619 - INFO - Getting partition 2/2
+2020-02-06 13:15:38,953 - INFO - GET http://172.18.2.12:9200/netvis_cpe/_search?size=0&filter_path=aggregations.cpeId.buckets.%2A%2A.value%2Caggregations.cpeId.buckets.key [status:200 request:0.334s]
+2020-02-06 13:15:38,956 - INFO - Writing predictions
+2020-02-06 13:15:38,956 - INFO - Iterating through the 100 cpes
+2020-02-06 13:15:39,043 - INFO - POST http://172.18.2.10:9200/_bulk [status:200 request:0.082s]
+2020-02-06 13:15:39,044 - INFO - Successfully written all Predictions to write_predictions_cpe_static
+2020-02-06 13:15:39,044 - INFO - Time elapsed during the predictions: 0:00:28.654392
