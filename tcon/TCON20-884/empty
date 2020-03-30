@@ -1,6 +1,0 @@
-kubectl get pod/cert-manager-66c8bc8b67-nd2mv -o jsonpath="{.items[*].spec.containers[*]}"
-kubectl get pod/collectsdk-controlcenter-6c9f5ffbd5-hqftz -o jsonpath='{.status.containerStatuses[*].name}{.status.containerStatuses[*].state '
--o jsonpath='{.items[*].status.containerStatuses[0].ready}'
-
-kubectl get pod collectsdk-controlcenter-6c9f5ffbd5-hqftz -o jsonpath='{.spec.containers[*].name}' --field-selector status.containerStatuses.state.running
-kubectl get pods -o json  | jq -r '.items[] | select(.status.phase != "Running" or ([ .status.conditions[] | select(.type == "Ready" and .status == "False") ] | length ) == 1 ) | .metadata.namespace + "/" + .metadata.name'

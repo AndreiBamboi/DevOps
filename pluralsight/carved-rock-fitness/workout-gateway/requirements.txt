@@ -1,5 +1,0 @@
-Flask
-prometheus-flask-exporter
-jaeger-client
-requests
-flask-cors

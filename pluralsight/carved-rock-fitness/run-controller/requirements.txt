@@ -1,4 +1,0 @@
-Flask
-prometheus-flask-exporter
-jaeger-client
-redis

@@ -1,5 +1,0 @@
-[main] 2020/03/06 06:18:41 Starting Tiller v2.16.1 (tls=false)
-[main] 2020/03/06 06:18:41 GRPC listening on :44134
-[main] 2020/03/06 06:18:41 Probes listening on :44135
-[main] 2020/03/06 06:18:41 Storage driver is ConfigMap
-[main] 2020/03/06 06:18:41 Max history per release is 0
