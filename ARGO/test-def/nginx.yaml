@@ -94,6 +94,6 @@ type: kubernetes.io/dockerconfigjson
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: new_mtr_secret
+  name: new-mtr-secret
   labels:
     name: test
