@@ -81,7 +81,7 @@ data:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: Kubernetes-pull-secret
+  name: mtr-pull-secret-couch
 data:
   .dockerconfigjson: ewogICJhdXRocyI6IHsKICAgICJtdHIuZXh0ZXJuYWwub3RjLnRlbGVrb21jbG91ZC5jb20iOiB7CiAgICAgICJhdXRoIjogIkpHRndjRG81V1V4RU1FVlhUMUJJUjFwTk4wTXdPVWcyVlZaR01rOUNVMDgwVGpVME0xZE5WazFaT0VKV1EwTmFTMU5YTlVJNE9VMWFUVTQxTTB4UlF6SlNWVUpTV2tjd05WWkJSMDlQVTBkQlFVMHlNMUV6VkVOU1RGTlZWbEphU0V4RldUZFJURWxYTkVaYVFsZFFOa2RTUjFWVFVGWlZUVmhOV2xNPSIsCiAgICAgICJlbWFpbCI6ICIiCiAgICB9CiAgfQp9
 type: kubernetes.io/dockerconfigjson
