@@ -1,0 +1,87 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.14.2
+          ports:
+            - containerPort: 80
+      volumeMounts:
+        - name: mtr-pull-secret-sync
+          mountPath: /apps/script
+        - name: mtr-pull-secret-def
+          mountPath: /apps/yaml
+      volumes:
+        - name: mtr-pull-secret-sync
+          configMap:
+            name: mtr-pull-secret-sync
+            defaultMode: 0744
+        - name: mtr-pull-secret-def
+          secret:
+            secretName: mtr-pull-secret-couch
+            defaultMode: 0744
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mtr-pull-secret-sync
+  namespace: argocd
+data:
+  mtr-pull-secret-sync.sh: |
+    #!/bin/bash
+    mtr-pull-secret_sync () {
+        cluster_ns=$(kubectl get ns | awk '{if (NR!=1){print $1}}')
+        excluded_ns="default kube-system kube-public kube-node-lease"
+        filtered_ns=$(echo ${cluster_ns[@]} ${excluded_ns[@]} | tr ' ' '\n' | sort | uniq -u)
+        secret="mtr-pull-secret"
+        ns_no_secret=()
+        echo "The following namespaces will be scanned for mtr-pull-secret: ${filtered_ns[@]}"
+        echo
+        for i in $filtered_ns
+        do
+          secret_name=$(kubectl get secrets -n $i | awk '{if (NR!=1){print $1}}')
+          if [[ "${secret_name[@]}" =~ "$secret" ]]; then
+            echo "$i namespace contain mtr-pull-secret"
+          else
+            echo "$i namespace does not contain mtr-pull-secret"
+            ns_no_secret=( "${ns_no_secret[@]}" "$i" )
+            kubectl apply -f /apps/yaml/mtr-secret.yaml -n $i
+            if [[ $? -ne 0 ]]; then
+                echo "Update failed. Check logs"
+                exit 1
+            else
+                echo "Namespace $i updated with $secret"
+            fi
+          fi
+        done
+        echo
+        if [[ -z "$ns_no_secret" ]]; then
+            echo "All namespaces scanned contain mtr-pull-secret"
+        else
+            echo "Namespaces without mtr-pull-secret are ${ns_no_secret[@]} and were updated with it"
+        fi
+    }
+    mtr-pull-secret_sync
+    sleep 1m
+
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: Kubernetes-pull-secret
+data:
+  .dockerconfigjson: ewogICJhdXRocyI6IHsKICAgICJtdHIuZXh0ZXJuYWwub3RjLnRlbGVrb21jbG91ZC5jb20iOiB7CiAgICAgICJhdXRoIjogIkpHRndjRG81V1V4RU1FVlhUMUJJUjFwTk4wTXdPVWcyVlZaR01rOUNVMDgwVGpVME0xZE5WazFaT0VKV1EwTmFTMU5YTlVJNE9VMWFUVTQxTTB4UlF6SlNWVUpTV2tjd05WWkJSMDlQVTBkQlFVMHlNMUV6VkVOU1RGTlZWbEphU0V4RldUZFJURWxYTkVaYVFsZFFOa2RTUjFWVFVGWlZUVmhOV2xNPSIsCiAgICAgICJlbWFpbCI6ICIiCiAgICB9CiAgfQp9
+type: kubernetes.io/dockerconfigjson
