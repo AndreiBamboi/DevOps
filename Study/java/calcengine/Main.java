@@ -13,5 +13,12 @@ public class Main {
         else
             result = 0.0d;
         System.out.println(result);
+
+        switch (opCode) {
+            case 'a':
+               result = val1 + val2;
+               break;
+
+        }
     }
 }
