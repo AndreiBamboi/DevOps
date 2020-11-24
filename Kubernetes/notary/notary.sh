@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
- sudo docker login -u abamboi -p 'Tw17&A!w' mtr.external.otc.telekomcloud.com
+ sudo docker login -u abamboi -p 'xxxx' mtr.external.otc.telekomcloud.com
  export DOCKER_CONTENT_TRUST_SERVER=https://notary.external.otc.telekomcloud.com
- sudo notary init mtr.external.otc.telekomcloud.com/abamboi/myfirstrepo -s https://notary.external.otc.telekomcloud.com
+ sudo notary init abamboi/myfirstrepo -s https://notary.external.otc.telekomcloud.com
  ---
  https://docs.docker.com/engine/security/trust/trust_sandbox/
  https://docs.docker.com/engine/security/trust/trust_automation/
@@ -13,7 +13,7 @@
  https://github.com/theupdateframework/notary
  https://help.sonatype.com/repomanager3/formats/docker-registry/docker-content-trust
 
- 1. Docker login
+1. Docker login
  docker login -u $USERNAME -p $PASSWORD mtr.external.otc.telekomcloud.com
 
  2. Enable DCT
